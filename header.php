@@ -58,7 +58,8 @@
                     'menu_id'         => FALSE,
                     'start_depth'    => 1,
                     'walker'          => new Description_Walker,
-                    'walker'           => new Sub_Menu_Nav_Menu
+                    'walker'           => new Sub_Menu_Nav_Menu,
+                    'walker'           => new Writing_Nav_Menu
                 )
             );
             

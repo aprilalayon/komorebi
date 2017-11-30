@@ -310,9 +310,17 @@ class Description_Walker extends Walker_Nav_Menu
 }
 
 class Sub_Menu_Nav_Menu extends Walker_Nav_Menu {
-  function start_lvl(&$output, $depth = 0, $args = array()) {
+  function start_lvl(&$output, $depth = 0, $args = array(), $id = 0) {
     $indent = str_repeat("\t", $depth);
-    $output .= "\n$indent<ul class=\"dropdown d-flex flex-column\">\n";
+    $output .= "\n$indent<ul class=\"dropdown-item d-flex flex-column\">\n";
+  }
+}
+
+
+class Writing_Nav_Menu extends Walker_Nav_Menu {
+  function start_lvl(&$output, $depth = 0, $args = array(), $id = 1760) {
+    $indent = str_repeat("\t", $depth);
+    $output .= "\n$indent<ul class=\"dropdown-menu d-flex flex-column\">\n";
   }
 }
 
