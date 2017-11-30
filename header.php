@@ -42,17 +42,28 @@
 			endif; ?>
 		</div><!-- .site-branding -->
 
-		<nav id="site-navigation" class="main-navigation">
+
+		<nav id="site-navigation" class="main-navigation ">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'komorebi' ); ?></button>
-			
-			<?php
-				wp_nav_menu( array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
-				) );
+
+           <?php
+            wp_nav_menu(
+                array (
+                    'menu'            => 'main-menu',
+                    'container'       => FALSE,
+                    'container_id'    => FALSE,
+                    'menu_class'      => 'd-flex flex-column',
+                    'sub_menu'         => TRUE,
+                    'show_parent'       => true,
+                    'menu_id'         => FALSE,
+                    'start_depth'    => 1,
+                    'walker'          => new Description_Walker,
+                    'walker'           => new Sub_Menu_Nav_Menu
+                )
+            );
             
-    
-			?>
+
+            ?>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 
