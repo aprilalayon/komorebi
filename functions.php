@@ -117,7 +117,14 @@ add_action( 'widgets_init', 'komorebi_widgets_init' );
  * Enqueue scripts and styles.
  */
 function komorebi_scripts() {
+    
+    wp_enqueue_style( 'komorebi_bootstrap_css', get_template_directory_uri() . '/css/bootstrap.min.css');
+    
 	wp_enqueue_style( 'komorebi-style', get_stylesheet_uri() );
+    
+    wp_enqueue_script('jquery');
+    
+    wp_enqueue_script( 'komorebi_bootstrap_js', get_template_directory_uri() . '/js/bootstrap.min.js', array( 'jquery' ), '20171129', true );
 
 	wp_enqueue_script( 'komorebi-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
