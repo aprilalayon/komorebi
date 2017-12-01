@@ -44,7 +44,8 @@ if ( ! function_exists( 'komorebi_setup' ) ) :
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
-			'menu-1' => esc_html__( 'Primary', 'komorebi' ),
+			'primary' => esc_html__( 'Primary Menu', 'komorebi' ),
+            'social' => esc_html__( 'Social Menu', 'komorebi' ),
 		) );
 
 		/*
@@ -124,6 +125,8 @@ function komorebi_scripts() {
     
     wp_enqueue_style( 'wpb-google-fonts', 'https://fonts.googleapis.com/css?family=Caveat|Signika:400,700|Source+Sans+Pro', false ); 
     
+	wp_enqueue_style('font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'); 
+
     wp_enqueue_script('jquery');
     
     wp_enqueue_script( 'komorebi_bootstrap_js', get_template_directory_uri() . '/js/bootstrap.min.js', array( 'jquery' ), '20171129', true );
@@ -324,6 +327,13 @@ class Writing_Nav_Menu extends Walker_Nav_Menu {
   }
 }
 
+
+/**Allow SVG files to upload**/
+function cc_mime_types($mimes) {
+  $mimes['svg'] = 'image/svg+xml';
+  return $mimes;
+}
+add_filter('upload_mimes', 'cc_mime_types');
 
 /**
  * Implement the Custom Header feature.

@@ -61,10 +61,14 @@
                     'walker'           => new Sub_Menu_Nav_Menu,
                     'walker'           => new Writing_Nav_Menu
                 )
-            );
-            
+            );        
 
             ?>
+            
+            <?php wp_nav_menu(array(
+               	 'theme_location' => 'social'
+               	)) 
+               	?>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 
