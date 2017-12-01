@@ -21,10 +21,10 @@
 </head>
 
 <body <?php body_class(); ?>>
-<div id="page" class="site">
+<div id="page" class="site container-fluid row d-flex flex-row">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'komorebi' ); ?></a>
 
-	<header id="masthead" class="site-header">
+	<header id="masthead" class="site-header col-sm-2">
 		<div class="site-branding">
 			<?php
 			the_custom_logo();
@@ -65,11 +65,20 @@
 
             ?>
             
-            <?php wp_nav_menu(array(
+		</nav><!-- #site-navigation -->
+		
+		
+		<div class="social-menu">
+        
+		    <?php wp_nav_menu(array(
                	 'theme_location' => 'social'
                	)) 
-               	?>
-		</nav><!-- #site-navigation -->
+               	
+            ?>
+		    
+		</div>
+    
 	</header><!-- #masthead -->
+	
 
 	<div id="content" class="site-content">
