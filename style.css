@@ -275,6 +275,17 @@ h1, h2, h3, h4, h5, h6 {
 	clear: both;
 }
 
+.site-title {
+	margin-top: 20%;
+}
+
+.site-title a {
+	font-family: "Caveat", cursive;
+	font-weight: bold;
+	font-size: 3em;
+	text-decoration: none;
+}
+
 p {
 	margin-bottom: 1.5em;
 }
@@ -761,7 +772,6 @@ a:hover, a:active {
 .col-sm-10 {
 	margin-left: 15%;
 	max-width: 86.333333%;
-	color: red;
 }
 
 /*--------------------------------------------------------------
@@ -874,5 +884,9 @@ object {
 .gallery-caption {
 	display: block;
 }
+
+/*--------------------------------------------------------------
+# Media Queries
+--------------------------------------------------------------*/
 
 /*# sourceMappingURL=../komorebi/sass/maps/style.css.map */
