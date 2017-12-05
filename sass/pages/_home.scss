@@ -1,18 +1,33 @@
-.site-header {
-    z-index: 10000; 
-    position: fixed;
-    top: 0;
-    width: 20%;
+// Body reset 
+
+html, body { 
+    margin: 0; 
+    padding: 0; 
     height: 100%;
-    background-color: white;
-    border-right: 0.5px solid #eaeaea ;
-    margin-right: 50px;
+} 
+
+// Header styles
+
+.site-header {
+    padding-right: 2%;
+    background-color: chocolate;
 }
 
-.col-sm-10 {
-    margin-left: 15%;
-    max-width: 86.333333%;
+.site-title  {
     
+    margin-top: 20%;
     
-    
+    a {
+        font-family:$font_logo;
+        font-weight: bold;
+        font-size: 3em;
+        text-decoration: none;
+    }
+
+}
+
+// Main content styles 
+
+.site-main {
+    height: 100%;
 }

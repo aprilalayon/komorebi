@@ -111,6 +111,13 @@ function komorebi_widgets_init() {
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
+    
+     register_sidebar( array(
+        'name'          => __( 'Navigation Sidebar', 'komorebi' ),
+        'id'            => 'navigation',
+        'before_widget' => '',
+        'after_widget'  => '',
+    ) );
 }
 add_action( 'widgets_init', 'komorebi_widgets_init' );
 
@@ -241,6 +248,7 @@ function komorebi_register_taxonomies() {
 }
 
 add_action( 'init', 'komorebi_register_taxonomies');
+
 
 /** Walker **/
 

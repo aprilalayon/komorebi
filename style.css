@@ -275,17 +275,6 @@ h1, h2, h3, h4, h5, h6 {
 	clear: both;
 }
 
-.site-title {
-	margin-top: 20%;
-}
-
-.site-title a {
-	font-family: "Caveat", cursive;
-	font-weight: bold;
-	font-size: 3em;
-	text-decoration: none;
-}
-
 p {
 	margin-bottom: 1.5em;
 }
@@ -758,20 +747,30 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 # Pages
 --------------------------------------------------------------*/
-.site-header {
-	z-index: 10000;
-	position: fixed;
-	top: 0;
-	width: 20%;
+html, body {
+	margin: 0;
+	padding: 0;
 	height: 100%;
-	background-color: white;
-	border-right: 0.5px solid #eaeaea;
-	margin-right: 50px;
 }
 
-.col-sm-10 {
-	margin-left: 15%;
-	max-width: 86.333333%;
+.site-header {
+	padding-right: 2%;
+	background-color: chocolate;
+}
+
+.site-title {
+	margin-top: 20%;
+}
+
+.site-title a {
+	font-family: "Caveat", cursive;
+	font-weight: bold;
+	font-size: 3em;
+	text-decoration: none;
+}
+
+.site-main {
+	height: 100%;
 }
 
 /*--------------------------------------------------------------

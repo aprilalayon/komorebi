@@ -21,10 +21,12 @@
 </head>
 
 <body <?php body_class(); ?>>
-<div id="page" class="site container-fluid row d-flex flex-row">
+<div id="page" class="site container-fluid row d-flex flew-row">
+
+
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'komorebi' ); ?></a>
 
-	<header id="masthead" class="site-header col-sm-2">
+	<header id="masthead" class="site-header">
 		<div class="site-branding">
 			<?php
 			the_custom_logo();
@@ -52,7 +54,7 @@
                     'menu'            => 'main-menu',
                     'container'       => FALSE,
                     'container_id'    => FALSE,
-                    'menu_class'      => 'd-flex flex-column',
+                    'menu_class'      => 'd-flex flex-column text-right',
                     'sub_menu'         => TRUE,
                     'show_parent'       => true,
                     'menu_id'         => FALSE,

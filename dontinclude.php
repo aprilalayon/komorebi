@@ -100,3 +100,48 @@ class Description_Walker extends Walker_Nav_Menu
     <style type="text/css" id="custom-background-css-override">
         body.custom-background { background-image: url('<?php echo $page_bg_image_url; ?>'); }
     </style>
+    
+     
+  <?php
+
+    // specify desired image size in place of 'full'
+            $page_bg_image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full' );
+            $page_bg_image_url = $page_bg_image[0]; // this returns just the URL of the image
+
+            $img_src = wp_get_attachment_image_url( $attachment_id, 'large' );
+            $img_srcset = wp_get_attachment_image_srcset( $attachment_id, 'large' );
+
+            ?>
+
+    <img src="<?php echo esc_url( $page_bg_image_url ); ?>"
+         srcset="<?php echo esc_attr( $img_srcset ); ?>"
+         sizes="(max-width: 50em) 87vw, 680px" alt="">
+         
+         <figure class="figure">
+         
+         ---------------
+        <img
+            class="img-overlay"
+            src="<?php echo esc_url( $page_bg_image_url ); ?>"
+             srcset="<?php echo esc_attr( $img_srcset ); ?>"
+             sizes="(max-width: 50em) 87vw, 680px" alt="">
+             
+        <figcaption class="figure-caption">A caption for the above image.</figcaption>
+         
+   </figure>
+   
+   
+   ----------------
+   
+    <?php
+            $background = wp_get_attachment_image_src( get_post_thumbnail_id( $page->ID ), 'full' );
+                ?>
+                
+        <style>
+        .content-area{
+        background-image: url('<?php echo $background[0]; ?>');
+        background-size: cover;
+        }
+        </style>
+        
+   
