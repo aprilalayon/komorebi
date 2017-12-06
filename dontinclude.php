@@ -118,8 +118,7 @@ class Description_Walker extends Walker_Nav_Menu
          sizes="(max-width: 50em) 87vw, 680px" alt="">
          
          <figure class="figure">
-         
-         ---------------
+       
         <img
             class="img-overlay"
             src="<?php echo esc_url( $page_bg_image_url ); ?>"
@@ -143,5 +142,31 @@ class Description_Walker extends Walker_Nav_Menu
         background-size: cover;
         }
         </style>
+        
+        
+--------------
+       
+       
+  <?php
+
+    // specify desired image size in place of 'full'
+            $page_bg_image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full' );
+            $page_bg_image_url = $page_bg_image[0]; // this returns just the URL of the image
+
+            $img_src = wp_get_attachment_image_url( $attachment_id, 'large' );
+            $img_srcset = wp_get_attachment_image_srcset( $attachment_id, 'large' );
+
+            ?>
+          
+           <figure class="backgroud-image">
+       
+                <img
+                    src="<?php echo esc_url( $page_bg_image_url ); ?>"
+                     srcset="<?php echo esc_attr( $img_srcset ); ?>"
+                     sizes="(max-width: 50em) 87vw, 3000px" alt="">
+         
+           </figure>
+           
+        
         
    

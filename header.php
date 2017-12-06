@@ -21,19 +21,20 @@
 </head>
 
 <body <?php body_class(); ?>>
-<div id="page" class="site container-fluid row d-flex flew-row">
-
+<div id="page" class="site container-fluid">
+    
+    <div class="row d-flex flew-row">
 
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'komorebi' ); ?></a>
 
-	<header id="masthead" class="site-header">
+	<header id="masthead" class="site-header col-xl-2">
 		<div class="site-branding">
 			<?php
 			the_custom_logo();
 			if ( is_front_page() && is_home() ) : ?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+				<h1 class="site-title text-center"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 			<?php else : ?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+				<p class="site-title text-center"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
 			<?php
 			endif;
 
@@ -70,16 +71,14 @@
 		</nav><!-- #site-navigation -->
 		
 		
-		<div class="social-menu">
-        
 		    <?php wp_nav_menu(array(
-               	 'theme_location' => 'social'
+               	 'theme_location' => 'social',
+                'menu_class'      => 'text-center',
                	)) 
                	
             ?>
-		    
-		</div>
-    
+            
+		
 	</header><!-- #masthead -->
 	
 

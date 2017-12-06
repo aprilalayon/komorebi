@@ -1,33 +1,21 @@
-// Body reset 
-
-html, body { 
-    margin: 0; 
-    padding: 0; 
-    height: 100%;
-} 
-
-// Header styles
-
-.site-header {
-    padding-right: 2%;
-    background-color: chocolate;
-}
-
-.site-title  {
-    
-    margin-top: 20%;
-    
-    a {
-        font-family:$font_logo;
-        font-weight: bold;
-        font-size: 3em;
-        text-decoration: none;
-    }
-
-}
-
 // Main content styles 
 
-.site-main {
-    height: 100%;
+
+.content-area {
+    margin-left: 15%;
+    height: auto;
+    max-width: 90%;
+    
+    figure > background-image {
+        margin: 0 auto;
+        position: fixed;
+        
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+             
+        }
+
+    }
 }

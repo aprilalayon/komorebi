@@ -343,6 +343,7 @@ function cc_mime_types($mimes) {
 }
 add_filter('upload_mimes', 'cc_mime_types');
 
+
 /**
  * Implement the Custom Header feature.
  */

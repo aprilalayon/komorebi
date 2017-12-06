@@ -594,6 +594,76 @@ a:hover, a:active {
 	width: 50%;
 }
 
+.site-header {
+	padding-right: 2%;
+	background-color: white;
+	height: 100%;
+	border-right: 1px solid grey;
+	position: fixed;
+	top: 0;
+	z-index: 1000;
+}
+
+.site-title {
+	margin-top: 20%;
+}
+
+.site-title a {
+	font-family: "Caveat", cursive;
+	font-weight: bold;
+	font-size: 3em;
+	text-decoration: none;
+	color: #39443C;
+}
+
+.main-navigation {
+	margin-top: 50px;
+}
+
+.main-navigation a {
+	font-family: "Signika", sans-serif;
+	font-size: 2em;
+	line-height: 1.3;
+	color: #D6B181;
+}
+
+.main-navigation a:hover {
+	color: #B8D6D1;
+}
+
+.menu-social-menu-container {
+	margin-top: 36em;
+	border-top: 1px solid #E2E2E2;
+}
+
+.menu-social-menu-container ul {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack: space-evenly;
+	    -ms-flex-pack: space-evenly;
+	        justify-content: space-evenly;
+	margin-left: 0;
+	padding-left: 0;
+}
+
+.menu-social-menu-container ul li {
+	list-style-type: none;
+}
+
+.menu-social-menu-container ul li a {
+	color: #E2E2E2;
+	font-size: 2em;
+}
+
+.menu-social-menu-container ul li a:hover {
+	color: #B8D6D1;
+}
+
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
@@ -747,30 +817,22 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 # Pages
 --------------------------------------------------------------*/
-html, body {
-	margin: 0;
-	padding: 0;
-	height: 100%;
+.content-area {
+	margin-left: 15%;
+	height: auto;
+	max-width: 90%;
 }
 
-.site-header {
-	padding-right: 2%;
-	background-color: chocolate;
+.content-area figure > background-image {
+	margin: 0 auto;
+	position: fixed;
 }
 
-.site-title {
-	margin-top: 20%;
-}
-
-.site-title a {
-	font-family: "Caveat", cursive;
-	font-weight: bold;
-	font-size: 3em;
-	text-decoration: none;
-}
-
-.site-main {
-	height: 100%;
+.content-area figure > background-image img {
+	width: 100%;
+	height: auto;
+	-o-object-fit: cover;
+	   object-fit: cover;
 }
 
 /*--------------------------------------------------------------

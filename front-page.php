@@ -16,28 +16,27 @@ get_header();
 
 ?>
 
-	<div id="primary" class="content-area">
-       
-       <main id="main" class="site-main">
-        
-          <?php
-           
-           $background = wp_get_attachment_image_src( get_post_thumbnail_id( $page->ID ), 'full' );
-                
-           ?>
-                
-        <style>
-        .site-main {
-        background-image: url('<?php echo $background[0]; ?>');
-        background-size: cover;
-            height: 100%; 
-        }
-        </style>
-           
+	<div id="primary" class="content-area col-xl-10">
 
+          <?php
+
+	/*
+	 * If a regular post or page, and not the front page, show the featured image.
+	 * Using get_queried_object_id() here since the $post global may not be set before a call to the_post().
+	 */
+	if ( ( ( is_page()  ) ) && has_post_thumbnail( get_queried_object_id() ) ) :
+		echo '<div class="home-image-background">';
+		echo get_the_post_thumbnail( get_queried_object_id(), 'home-featured-image' );
+		echo '</div><!-- .single-featured-image-header -->';
+	endif;
+	?>
+          
+       <main id="main" class="site-main">
+    
+    
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
 <?php
 //get_sidebar();
-get_footer();
+//get_footer();

@@ -1,0 +1,68 @@
+// Header styles
+
+.site-header {
+    padding-right: 2%;
+    background-color: white;
+    height: 100%;
+    border-right: 1px solid grey;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.site-title  {
+    
+    margin-top: 20%;
+    
+    a {
+        font-family:$font_logo;
+        font-weight: bold;
+        font-size: 3em;
+        text-decoration: none;
+        color: $dark-green;
+    }
+
+}
+
+
+.main-navigation {
+    
+    margin-top: 50px;
+
+    a {
+        font-family: $font-heading;
+        font-size: 2em;
+        line-height: 1.3;
+        color: $beige;
+    }
+    
+    a:hover {
+        color: $light-green;
+    }
+}
+
+.menu-social-menu-container {
+    margin-top: 36em;
+    border-top: 1px solid $grey;
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-left: 0;
+        padding-left: 0;
+    
+        li{
+            list-style-type: none;
+            
+            a {
+                color: $grey;
+                font-size: 2em;
+            }
+            a:hover {
+                color: $light-green;
+            
+            }
+        }
+    }
+}
