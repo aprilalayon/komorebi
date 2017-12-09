@@ -16,23 +16,34 @@ get_header();
 
 ?>
 
-	<div id="primary" class="content-area col-xl-10">
+	<div id="primary" class="content-area ">
 
           <?php
 
-	/*
-	 * If a regular post or page, and not the front page, show the featured image.
-	 * Using get_queried_object_id() here since the $post global may not be set before a call to the_post().
-	 */
-	if ( ( ( is_page()  ) ) && has_post_thumbnail( get_queried_object_id() ) ) :
-		echo '<div class="home-image-background">';
-		echo get_the_post_thumbnail( get_queried_object_id(), 'home-featured-image' );
-		echo '</div><!-- .single-featured-image-header -->';
-	endif;
-	?>
+    // specify desired image size in place of 'full'
+            $page_bg_image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full' );
+            $page_bg_image_url = $page_bg_image[0]; // this returns just the URL of the image
+
+            $img_src = wp_get_attachment_image_url( $attachment_id, 'full' );
+            $img_srcset = wp_get_attachment_image_srcset( $attachment_id, 'full' );
+
+            ?>
           
+           <figure class="background-image">
+       
+                <img
+                    src="<?php echo esc_url( $page_bg_image_url ); ?>"
+                     srcset="<?php echo esc_attr( $img_srcset ); ?>"
+                     sizes="(max-width: 50em) 87vw, 3000px" alt="">
+         
+           </figure>
+           
+        
+        
+           
        <main id="main" class="site-main">
     
+
     
 		</main><!-- #main -->
 	</div><!-- #primary -->

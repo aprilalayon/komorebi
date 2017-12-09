@@ -169,4 +169,42 @@ class Description_Walker extends Walker_Nav_Menu
            
         
         
+        -----------
+        
+        <?php
+
+	/*
+	 * If a regular post or page, and not the front page, show the featured image.
+	 * Using get_queried_object_id() here since the $post global may not be set before a call to the_post().
+	 */
+	if ( ( ( is_page()  ) ) && has_post_thumbnail( get_queried_object_id() ) ) :
+		echo '<div class="home-image-background">';
+		echo get_the_post_thumbnail( get_queried_object_id(), 'home-featured-image' );
+		echo '</div>';
+	endif;
+	?>
    
+  
+ ---------
+ 
+<?php
+			the_custom_logo();
+			if ( is_front_page() && is_home() ) : ?>
+				<h1 class="site-title text-center"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+			<?php else : ?>
+				<p class="site-title text-center"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+			<?php
+			endif;
+
+			$description = get_bloginfo( 'description', 'display' );
+			if ( $description || is_customize_preview() ) : ?>
+				<p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
+			<?php
+			endif; ?>
+		</div><!-- .site-branding -->
+		
+	
+------------------
+
+
+<?php esc_html_e( 'Primary Menu', 'komorebi' ); ?>

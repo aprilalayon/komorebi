@@ -600,20 +600,13 @@ a:hover, a:active {
 	height: 100%;
 	border-right: 1px solid grey;
 	position: fixed;
+	width: 300px;
 	top: 0;
 	z-index: 1000;
 }
 
-.site-title {
+.logo {
 	margin-top: 20%;
-}
-
-.site-title a {
-	font-family: "Caveat", cursive;
-	font-weight: bold;
-	font-size: 3em;
-	text-decoration: none;
-	color: #39443C;
 }
 
 .main-navigation {
@@ -662,6 +655,109 @@ a:hover, a:active {
 
 .menu-social-menu-container ul li a:hover {
 	color: #B8D6D1;
+}
+
+.nav-mobile ul {
+	margin: 0;
+	padding: 0;
+}
+
+.nav-mobile ul li {
+	list-style-type: none;
+}
+
+.nav-mobile ul li a {
+	font-family: "Signika", sans-serif;
+	font-size: 2em;
+	line-height: 1.3;
+	color: #D6B181;
+}
+
+.nav-mobile ul li a:hover {
+	color: #B8D6D1;
+}
+
+@media only screen and (min-width: 320px) {
+	.main-navigation,
+	.menu-social-menu-container,
+	.nav-mobile {
+		display: none;
+	}
+	.site-header {
+		width: 100%;
+		height: auto;
+		border: none;
+		position: relative;
+		padding-bottom: 2em;
+		border-bottom: 1px solid #E2E2E2;
+	}
+	.site-header .site-branding {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+	}
+	.site-header .site-branding .logo {
+		margin-top: 2em;
+		max-width: 80%;
+	}
+}
+
+button {
+	background: none;
+}
+
+.menu-toggle {
+	text-transform: capitalize;
+	font-family: "Signika", sans-serif;
+	font-size: 1.3em;
+	margin: 30px auto;
+	padding: 0;
+	cursor: pointer;
+	display: block;
+	width: 49px;
+	height: 35px;
+	border: none;
+	background-color: none;
+	white-space: nowrap;
+}
+
+.dropdown-menu {
+	position: static;
+	z-index: 1000;
+	float: none;
+	min-width: 10rem;
+	padding: .5rem 0;
+	margin: .125rem 0 0;
+	font-size: 1rem;
+	color: #292b2c;
+	text-align: center;
+	list-style: none;
+	background-color: #fff;
+	background-clip: padding-box;
+	border: none;
+	border-radius: none;
+}
+
+.dropdown-menu a {
+	font-family: "Signika", sans-serif;
+	font-weight: lighter;
+}
+
+.dropdown-menu > li {
+	display: block;
+}
+
+.expand,
+.visible {
+	display: block !important;
+}
+
+.show-mobile-menu,
+.nav-mobile {
+	height: auto;
 }
 
 /*--------------------------------------------------------------
@@ -823,16 +919,22 @@ a:hover, a:active {
 	max-width: 90%;
 }
 
-.content-area figure > background-image {
+.content-area .background-image {
 	margin: 0 auto;
-	position: fixed;
+	top: -168px;
 }
 
-.content-area figure > background-image img {
+.content-area .background-image img {
 	width: 100%;
 	height: auto;
-	-o-object-fit: cover;
-	   object-fit: cover;
+	display: block;
+}
+
+@media only screen and (min-width: 320px) {
+	.content-area {
+		margin-left: 0;
+		max-width: 100%;
+	}
 }
 
 /*--------------------------------------------------------------

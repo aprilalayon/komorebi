@@ -1,3 +1,5 @@
+
+
 // Main content styles 
 
 
@@ -6,16 +8,27 @@
     height: auto;
     max-width: 90%;
     
-    figure > background-image {
+    .background-image {
         margin: 0 auto;
-        position: fixed;
+        top: -168px;
         
         img {
             width: 100%;
             height: auto;
-            object-fit: cover;
+            display: block;
              
         }
 
     }
+}
+
+// Media Queries
+
+@media only screen and (min-width: 320px) {
+    
+    .content-area {
+        margin-left: 0;
+        max-width: 100%
+    }
+    
 }
