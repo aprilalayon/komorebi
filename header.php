@@ -10,7 +10,7 @@
  */
 
 ?>
-<!doctype html>
+<!Doctype html>
 <html <?php language_attributes(); ?>>
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
@@ -21,13 +21,13 @@
 </head>
 
 <body <?php body_class(); ?>>
-<div id="page" class="site container-fluid">
-    
-    <div class="row d-flex flew-row">
+<div id="page" class="site">
 
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'komorebi' ); ?></a>
 
 	<header id="masthead" class="site-header">
+	
+    <div class="mid-header">
 		<div class="site-branding">
 			
            <?php 
@@ -94,12 +94,16 @@
             
 		</nav>
 		
+        </div>
+        
+        <div class="sticky-social">
 		    <?php wp_nav_menu(array(
                	 'theme_location' => 'social',
                 'menu_class'      => 'text-center',
                	)) 
                	
             ?>
+        </div>
             
 		
 	</header><!-- #masthead -->

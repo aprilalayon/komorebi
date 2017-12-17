@@ -2,33 +2,49 @@
 
 // Main content styles 
 
-
-.content-area {
-    margin-left: 15%;
-    height: auto;
-    max-width: 90%;
-    
-    .background-image {
-        margin: 0 auto;
-        top: -168px;
+.home {
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
         
-        img {
-            width: 100%;
-            height: auto;
-            display: block;
-             
-        }
-
     }
-}
 
 // Media Queries
 
+
 @media only screen and (min-width: 320px) {
-    
-    .content-area {
-        margin-left: 0;
-        max-width: 100%
+
+
+    body.page-id-1755 {
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        height: 100%;
+        background-image: url(http://localhost:8888/erica/wp-content/uploads/2017/12/Scan_20160123-2.png);
+        background-size: cover;
+        background-position: 0% -57%;
+        background-repeat: no-repeat;
+        
     }
     
 }
+
+@media only screen and (min-width: 768px) {
+    
+
+    .site-header {
+        width: 25%;
+        height: auto;
+    }
+    
+    body.page-id-1755 {
+        background-position: center;
+    }
+
+    
+}
+

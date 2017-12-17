@@ -595,7 +595,8 @@ a:hover, a:active {
 }
 
 .site-header {
-	padding-right: 2%;
+	padding-right: 3%;
+	padding-left: 3%;
 	background-color: white;
 	height: 100%;
 	border-right: 1px solid grey;
@@ -615,6 +616,7 @@ a:hover, a:active {
 
 .main-navigation a {
 	font-family: "Signika", sans-serif;
+	font-weight: 400;
 	font-size: 2em;
 	line-height: 1.3;
 	color: #D6B181;
@@ -625,7 +627,6 @@ a:hover, a:active {
 }
 
 .menu-social-menu-container {
-	margin-top: 36em;
 	border-top: 1px solid #E2E2E2;
 }
 
@@ -668,6 +669,7 @@ a:hover, a:active {
 
 .nav-mobile ul li a {
 	font-family: "Signika", sans-serif;
+	font-weight: 400;
 	font-size: 2em;
 	line-height: 1.3;
 	color: #D6B181;
@@ -675,9 +677,46 @@ a:hover, a:active {
 
 .nav-mobile ul li a:hover {
 	color: #B8D6D1;
+	text-decoration: none;
+}
+
+.dropdown-menu a:first-child,
+.dropdown-menu a:last-child {
+	font-family: "Signika", sans-serif;
+	font-weight: 300;
+	color: #B8D6D1;
 }
 
 @media only screen and (min-width: 320px) {
+	/*skip to content for accessibility*/
+	.screen-reader-text {
+		clip: rect(1px, 1px, 1px, 1px);
+		position: absolute !important;
+		height: 1px;
+		width: 1px;
+		overflow: hidden;
+	}
+	.screen-reader-text:hover,
+	.screen-reader-text:active,
+	.screen-reader-text:focus {
+		background-color: #f1f1f1;
+		border-radius: 3px;
+		box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+		clip: auto !important;
+		color: #21759b;
+		display: block;
+		font-size: 14px;
+		font-weight: bold;
+		height: auto;
+		left: 5px;
+		line-height: normal;
+		padding: 15px 23px 14px;
+		text-decoration: none;
+		top: 5px;
+		width: auto;
+		z-index: 100000;
+		/* Above WP toolbar */
+	}
 	.main-navigation,
 	.menu-social-menu-container,
 	.nav-mobile {
@@ -700,64 +739,107 @@ a:hover, a:active {
 		        justify-content: center;
 	}
 	.site-header .site-branding .logo {
-		margin-top: 2em;
+		margin: 1.3em auto;
 		max-width: 80%;
+	}
+	button {
+		background: none;
+	}
+	.menu-toggle {
+		text-transform: capitalize;
+		font-family: "Signika", sans-serif;
+		font-size: 1.3em;
+		margin: 10px auto;
+		padding: 0;
+		cursor: pointer;
+		display: block;
+		width: 49px;
+		height: 35px;
+		border: none;
+		background-color: none;
+		white-space: nowrap;
+	}
+	.dropdown-menu {
+		position: static;
+		z-index: 1000;
+		float: none;
+		min-width: 10rem;
+		padding: .5rem 0;
+		margin: .125rem 0 0;
+		font-size: 1rem;
+		color: #292b2c;
+		text-align: center;
+		list-style: none;
+		background-color: #fff;
+		background-clip: padding-box;
+		border: none;
+		border-radius: none;
+	}
+	.dropdown-menu.toggle-on:after {
+		color: #D6B181;
+	}
+	.dropdown-menu > li {
+		display: none;
+	}
+	.menu-item-1810 {
+		position: relative;
+	}
+	.menu-item-1810.toggle-on:after {
+		content: "\f0d8";
+		font-family: FontAwesome;
+		color: #D6B181;
+	}
+	.menu-item-1810::after {
+		content: "\f0d7";
+		font-family: FontAwesome;
+		font-style: normal;
+		font-weight: normal;
+		text-decoration: inherit;
+		position: absolute;
+		top: 10px;
+		margin-left: 60px;
+		color: #D6B181;
+	}
+	.expand,
+	.visible {
+		display: block !important;
+	}
+	.show-mobile-menu,
+	.nav-mobile {
+		height: auto;
 	}
 }
 
-button {
-	background: none;
-}
-
-.menu-toggle {
-	text-transform: capitalize;
-	font-family: "Signika", sans-serif;
-	font-size: 1.3em;
-	margin: 30px auto;
-	padding: 0;
-	cursor: pointer;
-	display: block;
-	width: 49px;
-	height: 35px;
-	border: none;
-	background-color: none;
-	white-space: nowrap;
-}
-
-.dropdown-menu {
-	position: static;
-	z-index: 1000;
-	float: none;
-	min-width: 10rem;
-	padding: .5rem 0;
-	margin: .125rem 0 0;
-	font-size: 1rem;
-	color: #292b2c;
-	text-align: center;
-	list-style: none;
-	background-color: #fff;
-	background-clip: padding-box;
-	border: none;
-	border-radius: none;
-}
-
-.dropdown-menu a {
-	font-family: "Signika", sans-serif;
-	font-weight: lighter;
-}
-
-.dropdown-menu > li {
-	display: block;
-}
-
-.expand,
-.visible {
-	display: block !important;
-}
-
-.show-mobile-menu,
-.nav-mobile {
-	height: auto;
+@media only screen and (min-width: 768px) {
+	.nav-mobile,
+	.menu-toggle,
+	.expand {
+		display: none;
+	}
+	.main-navigation,
+	.menu-social-menu-container {
+		display: block;
+	}
+	.main-navigation {
+		margin-bottom: 60px;
+	}
+	.menu-item-1810::after {
+		margin-left: 10px;
+	}
+	.mid-header {
+		min-height: calc(100vh - 70px);
+	}
+	.sticky-social {
+		height: 50px;
+	}
+	.main-navigation a,
+	.menu-social-menu-container ul li a {
+		font-size: 1.5em;
+	}
+	.menu-item-1810::after {
+		top: 5px;
+		margin-left: 5px;
+	}
 }
 
 /*--------------------------------------------------------------
@@ -913,27 +995,36 @@ button {
 /*--------------------------------------------------------------
 # Pages
 --------------------------------------------------------------*/
-.content-area {
-	margin-left: 15%;
-	height: auto;
-	max-width: 90%;
-}
-
-.content-area .background-image {
-	margin: 0 auto;
-	top: -168px;
-}
-
-.content-area .background-image img {
+.home {
+	margin: 0px;
+	padding: 0px;
 	width: 100%;
-	height: auto;
-	display: block;
+	height: 100%;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
 @media only screen and (min-width: 320px) {
-	.content-area {
-		margin-left: 0;
-		max-width: 100%;
+	body.page-id-1755 {
+		margin: 0px;
+		padding: 0px;
+		width: 100%;
+		height: 100%;
+		background-image: url(http://localhost:8888/erica/wp-content/uploads/2017/12/Scan_20160123-2.png);
+		background-size: cover;
+		background-position: 0% -57%;
+		background-repeat: no-repeat;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.site-header {
+		width: 25%;
+		height: auto;
+	}
+	body.page-id-1755 {
+		background-position: center;
 	}
 }
 

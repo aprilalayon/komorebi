@@ -16,27 +16,9 @@ get_header();
 
 ?>
 
-	<div id="primary" class="content-area ">
+	<div id="primary" class="content-area">
 
-          <?php
-
-    // specify desired image size in place of 'full'
-            $page_bg_image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full' );
-            $page_bg_image_url = $page_bg_image[0]; // this returns just the URL of the image
-
-            $img_src = wp_get_attachment_image_url( $attachment_id, 'full' );
-            $img_srcset = wp_get_attachment_image_srcset( $attachment_id, 'full' );
-
-            ?>
-          
-           <figure class="background-image">
-       
-                <img
-                    src="<?php echo esc_url( $page_bg_image_url ); ?>"
-                     srcset="<?php echo esc_attr( $img_srcset ); ?>"
-                     sizes="(max-width: 50em) 87vw, 3000px" alt="">
-         
-           </figure>
+     
            
         
         
@@ -46,6 +28,7 @@ get_header();
 
     
 		</main><!-- #main -->
+       
 	</div><!-- #primary -->
 
 <?php

@@ -42,6 +42,12 @@ if ( ! function_exists( 'komorebi_setup' ) ) :
 		 */
 		add_theme_support( 'post-thumbnails' );
 
+        // Add new image size for front banners
+        add_image_size( 'bg-full', 2560, 1440, true );
+        add_image_size( 'bg-large', 1920, 1080, true );
+        add_image_size( 'bg-medium', 1024, 768, true );
+        add_image_size( 'bg-small', 960, 640, true );
+
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
 			'primary' => esc_html__( 'Primary Menu', 'komorebi' ),
@@ -130,7 +136,7 @@ function komorebi_scripts() {
     
 	wp_enqueue_style( 'komorebi-style', get_stylesheet_uri() );
     
-    wp_enqueue_style( 'wpb-google-fonts', 'https://fonts.googleapis.com/css?family=Caveat|Signika:400,700|Source+Sans+Pro', false ); 
+    wp_enqueue_style( 'wpb-google-fonts', 'https://fonts.googleapis.com/css?family=Caveat|Signika:300,400|Source+Sans+Pro', false ); 
     
 	wp_enqueue_style('font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'); 
 
@@ -346,6 +352,12 @@ function cc_mime_types($mimes) {
 }
 add_filter('upload_mimes', 'cc_mime_types');
 
+/*Remove random HTML tag CSS styling */
+function my_filter_head() {
+   remove_action('wp_head', '_admin_bar_bump_cb');
+} 
+
+add_action('get_header', 'my_filter_head');
 
 /**
  * Implement the Custom Header feature.

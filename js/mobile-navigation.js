@@ -5,7 +5,10 @@ jQuery(function($){
         })
 
 jQuery(document).ready(function($){
-	    $( '.menu-item-has-children' ).click(function(){
-    	     $('.dropdown-menu > li').slideDown()
-    	     })
+    $( '.menu-item-has-children' ).click(function(){
+    	    $('.dropdown-menu > li').toggle();
+                $(this).toggleClass('toggle-on');
+    	     
+        });
+        
 	});

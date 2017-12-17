@@ -208,3 +208,73 @@ class Description_Walker extends Walker_Nav_Menu
 
 
 <?php esc_html_e( 'Primary Menu', 'komorebi' ); ?>
+
+
+
+
+-------------------
+
+
+<?php
+
+    // specify desired image size in place of 'full'
+            $page_bg_image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full' );
+            $page_bg_image_url = $page_bg_image[0]; // this returns just the URL of the image
+
+            $img_src = wp_get_attachment_image_url( $attachment_id, 'full' );
+            $img_srcset = wp_get_attachment_image_srcset( $attachment_id, 'full' );
+            
+            $bgImage = get_post_thumbnail_id( $post->ID );
+
+            $bg_src_small = wp_get_attachment_image_srcset( $bgImage, 'bg-small' );
+            $bg_src_medium = wp_get_attachment_image_srcset( $bgImage, 'bg-medium' );
+            $bg_src_large = wp_get_attachment_image_srcset( $bgImage, 'bg-large' );
+            $bg_src_full = wp_get_attachment_image_srcset( $bgImage, 'bg-full');
+        
+             $bg_info = get_post( $bgImage ); // Get post by ID
+            //var_dump($thumb_img);
+            $caption = $bg_info->post_excerpt; // Display Caption
+            $desctiption = $bg_info->post_content; // Display Description
+            $alt = $bg_info->_wp_attachment_image_alt;//Display Alt attribute
+
+
+
+            ?>
+          
+           <figure class="background-image">
+       
+                <img
+                    src="<?php echo esc_url( $page_bg_image_url ); ?>"
+                     srcset="<?php echo esc_attr ( $bg_src_large ) ; ?>,
+                    <?php echo esc_attr ( $bg_src_medium ); ?>,
+                    <?php echo esc_attr ( $bg_src_small ); ?>, 
+                    <?php echo esc_attr ( $bg_src_full ); ?>"
+                     
+                     alt="<?php echo $alt; ?>">
+         
+           </figure>
+           
+        
+        
+           
+       <main id="main" class="site-main">
+    
+
+    
+		</main><!-- #main -->
+		
+	
+------------------
+
+
+<?php
+            $background = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full' );
+                ?>
+                
+        style="background-image:url(<?php echo $background[0]; ?>);
+        "
+        class="home"
+        
+-------------------
+
+
