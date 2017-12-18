@@ -99,7 +99,7 @@
         <div class="sticky-social">
 		    <?php wp_nav_menu(array(
                	 'theme_location' => 'social',
-                'menu_class'      => 'text-center',
+                'menu_class'      => 'social-menu',
                	)) 
                	
             ?>

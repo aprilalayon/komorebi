@@ -26,18 +26,18 @@
         height: 100%;
         background-image: url(http://localhost:8888/erica/wp-content/uploads/2017/12/Scan_20160123-2.png);
         background-size: cover;
-        background-position: 0% -57%;
+        background-position: 0% 200px;
         background-repeat: no-repeat;
         
     }
     
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1000px) and (min-height: 649px){
     
 
     .site-header {
-        width: 25%;
+        width: 23%;
         height: auto;
     }
     
