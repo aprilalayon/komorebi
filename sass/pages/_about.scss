@@ -1,0 +1,42 @@
+
+.site-content {
+    width: 77%;
+}
+
+.site-flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.column-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.column {
+//    flex: 1;
+}
+
+.about-col-1 {
+    background-color: $light-green;
+    width: 40%;
+
+    p {
+        margin: 40px;
+        font-family: $font_body;
+    }
+    
+}
+
+.about-col-2 {
+    width: 60%;
+    margin: 0;
+    
+    img {
+        display: block;
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+    }
+    
+}

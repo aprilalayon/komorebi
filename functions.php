@@ -43,10 +43,12 @@ if ( ! function_exists( 'komorebi_setup' ) ) :
 		add_theme_support( 'post-thumbnails' );
 
         // Add new image size for front banners
-        add_image_size( 'bg-full', 2560, 1440, true );
-        add_image_size( 'bg-large', 1920, 1080, true );
-        add_image_size( 'bg-medium', 1024, 768, true );
-        add_image_size( 'bg-small', 960, 640, true );
+//        add_image_size( 'bg-full', 2560, 1440, true );
+//        add_image_size( 'bg-large', 1920, 1080, true );
+//        add_image_size( 'bg-medium', 1024, 768, true );
+//        add_image_size( 'bg-small', 960, 640, true );
+        
+        add_image_size( 'about-profile', 500, 700, true );
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(

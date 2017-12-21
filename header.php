@@ -25,7 +25,9 @@
 
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'komorebi' ); ?></a>
 
-	<header id="masthead" class="site-header">
+    <div class="site-flex">
+    
+    <header id="masthead" class="site-header">
 	
     <div class="mid-header">
 		<div class="site-branding">

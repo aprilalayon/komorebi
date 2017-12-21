@@ -1,13 +1,14 @@
 // Header styles
 
+
 .site-header {
     padding-right: 3%;
     padding-left: 3%;
     background-color: white;
-    height: 100%;
+    height: auto;
     border-right: 1px solid grey;
     position: fixed;
-    width: 300px;
+//    width: 100%;
     top: 0;
 }
 
@@ -140,7 +141,7 @@
 }
     
 .site-header {
-    width: 100%;
+    min-width: 100%;
     height: auto;
     border: none;
     position: relative;
@@ -242,6 +243,8 @@ button {
 
     .site-header {
         z-index: 1000;
+        border-bottom: none;
+        min-width: 300px;
     }
     
     .nav-mobile,
@@ -263,11 +266,12 @@ button {
         }
     
     .mid-header {
-          min-height: calc(100vh - 59px);
+        min-height: calc(100vh - 59px);
     }
     
     .sticky-social {
         height: 50px;
+        margin-bottom: 10px;
     }
     
     .main-navigation a,

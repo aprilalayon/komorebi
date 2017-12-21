@@ -15,21 +15,41 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
+		<main id="main" class="site-main column-container">
+            
+            <section class="about-col-1 column">
+               
+               <?php
 
-			<?php
-			while ( have_posts() ) : the_post();
+				    if (function_exists ('get_field')){
 
-				get_template_part( 'template-parts/content', 'page' );
+				    	if(get_field('about_me')){ ?>
+				        
+				           <p> <?php echo "<p>"; the_field('about_me'); echo "</p>"; ?>
+						
+						<?php
+				        }
+				    }
 
-				// If comments are open or we have at least one comment, load up the comment template.
-				if ( comments_open() || get_comments_number() ) :
-					comments_template();
-				endif;
+					?>
+			</section>
+			
+			<figure class="about-col-2 column">
+                
+                <?php 
 
-			endwhile; // End of the loop.
-			?>
+                    $image = get_field('about_image');
+                    $size = 'about-profile'; // (thumbnail, medium, large, full or custom size)
 
+                    if( $image ) {
+
+                        echo wp_get_attachment_image( $image, $size );
+
+                    }
+
+                    ?>
+					
+			</figure>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

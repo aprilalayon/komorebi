@@ -603,10 +603,9 @@ a:hover, a:active {
 	padding-right: 3%;
 	padding-left: 3%;
 	background-color: white;
-	height: 100%;
+	height: auto;
 	border-right: 1px solid grey;
 	position: fixed;
-	width: 300px;
 	top: 0;
 }
 
@@ -727,7 +726,7 @@ a:hover, a:active {
 		display: none;
 	}
 	.site-header {
-		width: 100%;
+		min-width: 100%;
 		height: auto;
 		border: none;
 		position: relative;
@@ -816,6 +815,8 @@ a:hover, a:active {
 @media only screen and (min-width: 1000px) and (min-height: 649px) {
 	.site-header {
 		z-index: 1000;
+		border-bottom: none;
+		min-width: 300px;
 	}
 	.nav-mobile,
 	.menu-toggle {
@@ -836,6 +837,7 @@ a:hover, a:active {
 	}
 	.sticky-social {
 		height: 50px;
+		margin-bottom: 10px;
 	}
 	.main-navigation a,
 	.menu-social-menu-container ul li a {
@@ -1024,6 +1026,53 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 # Pages
 --------------------------------------------------------------*/
+.site-content {
+	width: 77%;
+}
+
+.site-flex {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+}
+
+.column-container {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+}
+
+.about-col-1 {
+	background-color: #B8D6D1;
+	width: 40%;
+}
+
+.about-col-1 p {
+	margin: 40px;
+	font-family: "Source Sans Pro", sans-serif;
+}
+
+.about-col-2 {
+	width: 60%;
+	margin: 0;
+}
+
+.about-col-2 img {
+	display: block;
+	-o-object-fit: cover;
+	   object-fit: cover;
+	height: 100%;
+	width: 100%;
+}
+
 .home {
 	margin: 0px;
 	padding: 0px;
