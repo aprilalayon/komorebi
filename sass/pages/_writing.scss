@@ -1,0 +1,97 @@
+// Media Queries
+
+
+@media only screen and (min-width: 320px) {
+
+
+    body.post-type-archive-work,
+    body.term-190,
+    body.term-191 {
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        height: 100%;
+        background-image: url(http://localhost:8888/erica/wp-content/uploads/2017/12/Scan_20160123-3.png);
+        background-size: cover;
+        background-position: 0% 200px;
+        background-repeat: no-repeat;
+        z-index: 0;
+        
+    }
+    
+    
+    .work-content-area {
+        background-color: rgba(255, 255, 255, 0.3);
+        height: 100%;
+    }
+    
+    .work-main {
+        z-index: 9999;
+        background-color: transparent;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -18%);
+        
+        h1 {
+            font-family: $font_heading;
+            font-size: 3em;
+            text-align: center;
+            padding: 20px 40px;
+            text-transform: uppercase;
+
+            
+            a {
+                color: white;
+                text-decoration: none;
+                
+                a:hover,
+                a:focus,
+                a:active {
+                    text-decoration: none;
+                }
+            
+            }
+        }
+        
+        h1:first-child {
+                background-color: $beige;
+            }
+            
+        h1:last-child {
+                background-color: $light-green;
+            }
+
+    }
+    
+}
+
+@media only screen and (min-width: 1000px) and (min-height: 649px){
+    
+    body.post-type-archive-work,
+    body.term-190,
+    body.term-191 {
+        background-position: 200px 0px;
+    }
+    
+
+    .work-main {
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-35%, -57%);
+        
+        h1 {
+            font-size: 5.5em;
+        }
+        
+        h1:first-child {
+                margin-right: 25%;
+            }
+    }
+    
+    
+    
+}

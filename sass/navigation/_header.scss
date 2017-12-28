@@ -206,17 +206,17 @@ button {
     display: none;
 }
 
-.menu-item-1810 {
+.menu-item-1821 {
     position: relative;
     }
     
-.menu-item-1810.toggle-on:after {
+.menu-item-1821.toggle-on:after {
     content: "\f0d8";
     font-family: FontAwesome;
     color: $beige;
 }
     
-.menu-item-1810::after {
+.menu-item-1821::after {
     content: "\f0d7";
     font-family: FontAwesome;
     font-style: normal;
@@ -261,7 +261,7 @@ button {
         margin-bottom: 80px;
     }
     
-    .menu-item-1810::after{
+    .menu-item-1821::after{
         margin-left: 10px;
         }
     
@@ -279,7 +279,7 @@ button {
         font-size: 1.8em;
     }
     
-    .menu-item-1810::after {
+    .menu-item-1821::after {
         top: 5px;
         margin-left: 5px;
     }
@@ -300,7 +300,7 @@ button {
         font-size: 2.1em;
     }
     
-    .menu-item-1810::after {
+    .menu-item-1821::after {
         top: 5px;
     }
 }

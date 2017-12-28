@@ -784,15 +784,15 @@ a:hover, a:active {
 	.dropdown-menu > li {
 		display: none;
 	}
-	.menu-item-1810 {
+	.menu-item-1821 {
 		position: relative;
 	}
-	.menu-item-1810.toggle-on:after {
+	.menu-item-1821.toggle-on:after {
 		content: "\f0d8";
 		font-family: FontAwesome;
 		color: #D6B181;
 	}
-	.menu-item-1810::after {
+	.menu-item-1821::after {
 		content: "\f0d7";
 		font-family: FontAwesome;
 		font-style: normal;
@@ -829,7 +829,7 @@ a:hover, a:active {
 	.main-navigation {
 		margin-bottom: 80px;
 	}
-	.menu-item-1810::after {
+	.menu-item-1821::after {
 		margin-left: 10px;
 	}
 	.mid-header {
@@ -843,7 +843,7 @@ a:hover, a:active {
 	.menu-social-menu-container ul li a {
 		font-size: 1.8em;
 	}
-	.menu-item-1810::after {
+	.menu-item-1821::after {
 		top: 5px;
 		margin-left: 5px;
 	}
@@ -868,7 +868,7 @@ a:hover, a:active {
 	.menu-social-menu-container ul li a {
 		font-size: 2.1em;
 	}
-	.menu-item-1810::after {
+	.menu-item-1821::after {
 		top: 5px;
 	}
 }
@@ -1103,6 +1103,130 @@ a:hover, a:active {
 	}
 	body.page-id-1755 {
 		background-position: center;
+	}
+}
+
+@media only screen and (min-width: 320px) {
+	.print-content-area {
+		background-color: rgba(255, 255, 255, 0.3);
+		height: 100%;
+	}
+	.print-main {
+		z-index: 9999;
+		background-color: transparent;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		-webkit-transform: translate(-50%, -18%);
+		        transform: translate(-50%, -18%);
+	}
+	.print-main h1 {
+		font-family: "Signika", sans-serif;
+		font-size: 3em;
+		text-align: center;
+		padding: 20px 40px;
+		text-transform: uppercase;
+	}
+	.print-main h1 a {
+		color: white;
+		text-decoration: none;
+	}
+	.print-main h1 a a:hover,
+	.print-main h1 a a:focus,
+	.print-main h1 a a:active {
+		text-decoration: none;
+	}
+}
+
+@media only screen and (min-width: 1000px) and (min-height: 649px) {
+	.print-main {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		-webkit-transform: translate(-3, -130%);
+		        transform: translate(-3, -130%);
+	}
+	.print-main h1 {
+		font-size: 3em;
+	}
+}
+
+@media only screen and (min-width: 320px) {
+	body.post-type-archive-work,
+	body.term-190,
+	body.term-191 {
+		margin: 0px;
+		padding: 0px;
+		width: 100%;
+		height: 100%;
+		background-image: url(http://localhost:8888/erica/wp-content/uploads/2017/12/Scan_20160123-3.png);
+		background-size: cover;
+		background-position: 0% 200px;
+		background-repeat: no-repeat;
+		z-index: 0;
+	}
+	.work-content-area {
+		background-color: rgba(255, 255, 255, 0.3);
+		height: 100%;
+	}
+	.work-main {
+		z-index: 9999;
+		background-color: transparent;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		-webkit-transform: translate(-50%, -18%);
+		        transform: translate(-50%, -18%);
+	}
+	.work-main h1 {
+		font-family: "Signika", sans-serif;
+		font-size: 3em;
+		text-align: center;
+		padding: 20px 40px;
+		text-transform: uppercase;
+	}
+	.work-main h1 a {
+		color: white;
+		text-decoration: none;
+	}
+	.work-main h1 a a:hover,
+	.work-main h1 a a:focus,
+	.work-main h1 a a:active {
+		text-decoration: none;
+	}
+	.work-main h1:first-child {
+		background-color: #D6B181;
+	}
+	.work-main h1:last-child {
+		background-color: #B8D6D1;
+	}
+}
+
+@media only screen and (min-width: 1000px) and (min-height: 649px) {
+	body.post-type-archive-work,
+	body.term-190,
+	body.term-191 {
+		background-position: 200px 0px;
+	}
+	.work-main {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: row;
+		        flex-direction: row;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		-webkit-transform: translate(-35%, -57%);
+		        transform: translate(-35%, -57%);
+	}
+	.work-main h1 {
+		font-size: 5.5em;
+	}
+	.work-main h1:first-child {
+		margin-right: 25%;
 	}
 }
 
