@@ -3,18 +3,18 @@
 
 @media only screen and (min-width: 320px) {
 
-    .print-content-area {
-        background-color: rgba(255, 255, 255, 0.3);
-        height: 100%;
+    .print-content-area,
+    .web-content-area {
+        background-color: rgba(255, 255, 255, 0.2);
+        height:100%;
     }
 
     .print-main {
-        z-index: 9999;
-        background-color: transparent;
+        z-index: 1000;
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -18%);
+        transform: translate(-50%, -18%);    
         
         h1 {
             font-family: $font_heading;
@@ -22,6 +22,8 @@
             text-align: center;
             padding: 20px 40px;
             text-transform: uppercase;
+            background-color: $light_green;
+            color: white;
 
             
             a {
@@ -36,6 +38,13 @@
             
             }
         }
+        
+        p {
+            background-color: $light-green;
+            color: $dark-green;
+            text-align: center;
+            padding: 10px 40px;
+        }
 
     }
     
@@ -43,19 +52,12 @@
 
 @media only screen and (min-width: 1000px) and (min-height: 649px){
     
-    
-    .print-main {
+    .print-main,
+    .web-main {
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-3, -130%);
-        
-        h1 {
-            font-size: 3em;
-        }
-        
+        transform: translate(-18%, -90%);
     }
-    
-    
     
 }

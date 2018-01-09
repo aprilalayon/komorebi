@@ -10,8 +10,8 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
+	<div id="primary" class="content-area web-content-area">
+		<main id="main" class="site-main web-main">
 
 		<?php
 		if ( have_posts() ) : ?>

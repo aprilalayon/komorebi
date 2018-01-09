@@ -607,6 +607,7 @@ a:hover, a:active {
 	border-right: 1px solid grey;
 	position: fixed;
 	top: 0;
+	z-index: 9999;
 }
 
 .logo {
@@ -809,6 +810,7 @@ a:hover, a:active {
 	}
 	.nav-mobile {
 		height: auto;
+		z-index: 10000;
 	}
 }
 
@@ -1107,13 +1109,13 @@ a:hover, a:active {
 }
 
 @media only screen and (min-width: 320px) {
-	.print-content-area {
-		background-color: rgba(255, 255, 255, 0.3);
+	.print-content-area,
+	.web-content-area {
+		background-color: rgba(255, 255, 255, 0.2);
 		height: 100%;
 	}
 	.print-main {
-		z-index: 9999;
-		background-color: transparent;
+		z-index: 1000;
 		position: absolute;
 		top: 50%;
 		left: 50%;
@@ -1126,6 +1128,8 @@ a:hover, a:active {
 		text-align: center;
 		padding: 20px 40px;
 		text-transform: uppercase;
+		background-color: #B8D6D1;
+		color: white;
 	}
 	.print-main h1 a {
 		color: white;
@@ -1136,18 +1140,57 @@ a:hover, a:active {
 	.print-main h1 a a:active {
 		text-decoration: none;
 	}
+	.print-main p {
+		background-color: #B8D6D1;
+		color: #39443C;
+		text-align: center;
+		padding: 10px 40px;
+	}
 }
 
 @media only screen and (min-width: 1000px) and (min-height: 649px) {
-	.print-main {
+	.print-main,
+	.web-main {
 		position: absolute;
 		top: 50%;
 		left: 50%;
-		-webkit-transform: translate(-3, -130%);
-		        transform: translate(-3, -130%);
+		-webkit-transform: translate(-18%, -90%);
+		        transform: translate(-18%, -90%);
 	}
-	.print-main h1 {
+}
+
+@media only screen and (min-width: 320px) {
+	.web-main {
+		z-index: 1000;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		-webkit-transform: translate(-50%, -18%);
+		        transform: translate(-50%, -18%);
+	}
+	.web-main h1 {
+		font-family: "Signika", sans-serif;
 		font-size: 3em;
+		text-align: center;
+		padding: 20px 40px;
+		text-transform: uppercase;
+		background-color: #D6B181;
+		color: white;
+	}
+	.web-main h1 a {
+		color: white;
+		text-decoration: none;
+	}
+	.web-main h1 a a:hover,
+	.web-main h1 a a:focus,
+	.web-main h1 a a:active {
+		text-decoration: none;
+	}
+	.web-main p {
+		background-color: #D6B181;
+		color: #39443C;
+		text-align: center;
+		padding: 10px 40px;
 	}
 }
 
@@ -1170,7 +1213,7 @@ a:hover, a:active {
 		height: 100%;
 	}
 	.work-main {
-		z-index: 9999;
+		z-index: 1000;
 		background-color: transparent;
 		position: absolute;
 		top: 50%;

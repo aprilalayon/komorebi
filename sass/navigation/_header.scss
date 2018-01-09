@@ -10,6 +10,7 @@
     position: fixed;
 //    width: 100%;
     top: 0;
+    z-index: 9999;
 }
 
 .logo  {
@@ -235,7 +236,8 @@ button {
 }
 
 .nav-mobile {
-		height: auto;	
+		height: auto;
+        z-index: 10000;
 	}
 }
 
