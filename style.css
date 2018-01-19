@@ -1149,8 +1149,7 @@ a:hover, a:active {
 }
 
 @media only screen and (min-width: 1000px) and (min-height: 649px) {
-	.print-main,
-	.web-main {
+	.print-main {
 		position: absolute;
 		top: 50%;
 		left: 50%;
@@ -1191,6 +1190,16 @@ a:hover, a:active {
 		color: #39443C;
 		text-align: center;
 		padding: 10px 40px;
+	}
+}
+
+@media only screen and (min-width: 1000px) and (min-height: 649px) {
+	.web-main {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		-webkit-transform: translate(-18%, -90%);
+		        transform: translate(-18%, -90%);
 	}
 }
 
