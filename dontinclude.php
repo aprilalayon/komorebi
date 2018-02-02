@@ -357,3 +357,21 @@ class Description_Walker extends Walker_Nav_Menu
 		endif; ?>
 		
 		</div><!--end of testimonials-->
+		
+	
+
+
+----------------
+
+                 <?php 
+
+                                $image = get_field('event_image');
+                                $size = 'community-image'; // (thumbnail, medium, large, full or custom size)
+
+                                if( $image ) {
+
+                                    echo wp_get_attachment_image( $image, $size );
+
+                                }
+
+                                ?>

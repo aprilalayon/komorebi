@@ -49,6 +49,7 @@ if ( ! function_exists( 'komorebi_setup' ) ) :
 //        add_image_size( 'bg-small', 960, 640, true );
         
         add_image_size( 'about-profile', 500, 700, true );
+        add_image_size( 'community-image', 400, 400, true );
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
@@ -164,6 +165,9 @@ add_action( 'wp_enqueue_scripts', 'komorebi_scripts' );
  */
 function komorebi_register_custom_post_types() {
 
+    
+// Works CPT 
+    
     $labels = array(
         'name'               => _x( 'Works', 'post type general name' ),
         'singular_name'      => _x( 'Work', 'post type singular name'),
@@ -209,6 +213,55 @@ function komorebi_register_custom_post_types() {
         'menu_icon'          => 'dashicons-format-quote',
     );
     register_post_type( 'work', $args );
+    
+    
+// Community CPT 
+    
+    $labels = array(
+        'name'               => _x( 'Community', 'post type general name' ),
+        'singular_name'      => _x( 'Community', 'post type singular name'),
+        'menu_name'          => _x( 'Community', 'admin menu' ),
+        'name_admin_bar'     => _x( 'Community', 'add new on admin bar' ),
+        'add_new'            => _x( 'Add New', 'Community' ),
+        'add_new_item'       => __( 'Add New Community' ),
+        'new_item'           => __( 'New Community' ),
+        'edit_item'          => __( 'Edit Community' ),
+        'view_item'          => __( 'View Community' ),
+        'all_items'          => __( 'All Community' ),
+        'search_items'       => __( 'Search Community' ),
+        'parent_item_colon'  => __( 'Parent Community:' ),
+        'not_found'          => __( 'No Community images found.' ),
+        'not_found_in_trash' => __( 'No Community found in Trash.' ),
+        'archives'           => __( 'Community Archives'),
+        'insert_into_item'   => __( 'Uploaded to this Entry'),
+        'uploaded_to_this_item' => __( 'Community Archives'),
+        'filter_item_list'   => __( 'Filter Community list'),
+        'items_list_navigation' => __( 'Community list navigation'),
+        'items_list'         => __( 'Community list'),
+        'featured_image'     => __( 'Community feature image'),
+        'set_featured_image' => __( 'Set Community feature image'),
+        'remove_featured_image' => __( 'Remove Community feature image'),
+        'use_featured_image' => __( 'Use as feature image'),
+    );
+
+    $args = array(
+        'labels'             => $labels,
+        'public'             => true,
+        'publicly_queryable' => true,
+        'show_ui'            => true,
+        'show_in_menu'       => true,
+        'show_in_nav_menus'  => true,
+        'show_in_admin_bar'  => true,
+        'query_var'          => true,
+        'rewrite'            => array( 'slug' => 'Community' ),
+        'capability_type'    => 'post',
+        'has_archive'        => true,
+        'hierarchical'       => false,
+        'menu_position'      => 5,
+        'supports'           => array( 'title', 'thumbnail', 'editor' ),
+        'menu_icon'          => 'dashicons-groups',
+    );
+    register_post_type( 'community', $args );
 
  }
  add_action( 'init', 'komorebi_register_custom_post_types' );
