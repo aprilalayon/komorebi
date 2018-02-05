@@ -50,33 +50,41 @@ get_header(); ?>
                         }
                         ?> 
                         
-                        &#11049;
+                        <br>
                         
                          
-                            <?php the_field('role'); ?> 
+                            <?php the_field('event_role'); ?> 
                         
                         
                             <a href=" <?php the_field('event_link'); ?> "> 
                             <p>Visit Site</p> 
                         </a>
-                        </p>
+                        
+                            <p class="event-summary">
+                                <?php the_field('event_summary'); ?>
+                            </p>
+                        
+                        
+                        
                         
                         <figure>
-                            
                             <?php 
-//                                var_dump(get_field('event_image'));
+
+                                
                                 $image = get_field('event_image');
                                 $size = 'community-image'; // (thumbnail, medium, large, full or custom size)
-//                                var_dump($image);
-                                if( $image != '') {
-
-                                    echo wp_get_attachment_image( $image );
-
+                           
+                                if( $image ) { 
+                                   
+                                    echo wp_get_attachment_image( $image, $size ); ?>
+                        </figure>
+                           
+                            <?php
                                 }
 
-                                ?>
-                            
-                        </figure>
+                            ?>
+                    
+                        
                         
                         <?php
 
