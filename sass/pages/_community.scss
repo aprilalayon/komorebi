@@ -1,0 +1,116 @@
+@media only screen and (min-width: 320px) {
+
+    body.post-type-archive-community {
+        background-image: url(http://localhost:8888/erica/wp-content/uploads/2018/02/Scan_20160123-4.png);
+        background-size: cover;
+        background-position: -100px 0%;
+        background-repeat: no-repeat;
+        z-index: 0;
+        
+        .community-content-area {
+        background-color: rgba(0, 0, 0, 0.3);
+        height: 100%;
+    }
+        
+        h1 {
+            margin: 30px 50px;
+            color: white;
+            font-family: $font-heading;
+            font-size: 3em;
+        }
+        
+        
+        .community-body {
+            
+            margin: 10px 30px;
+            display: flex;
+            flex-direction: column;
+            
+            h2 {
+            font-family: $font-heading;
+            color: white;
+            margin-bottom: 5px;
+            }
+
+            .event-role {
+                font-family: $font-heading;
+                font-weight: 100;
+                font-size: 1.5em;
+                margin-top: 5px;
+                margin-bottom: 5px;
+            }
+            
+            .event-summary {
+                margin-bottom: 30px;
+            }
+
+            hr {
+                margin-top: 15px;
+                margin-bottom: 15px;
+            }
+
+            
+            p {
+                color: white;
+            }
+            
+            a {
+                background-color: $beige;
+                padding: 10px 30px;
+                font-family: $font-heading;
+                text-transform: uppercase;
+            
+            }
+
+            a:visited,
+            a:hover {
+                color: $olive;
+                text-decoration: none;
+                background-color: $mint-green;
+            }
+            
+            .community-post {
+                
+                display: flex;
+                flex-direction: column;
+                
+                section {
+                    order: 2;
+                    margin-bottom: 100px;
+                }
+
+                figure {
+                    order: 1;
+                }
+                
+            }
+        }
+        
+        
+        
+    }
+    
+    
+
+}
+
+@media only screen and (min-width: 900px) {
+            
+    
+    .community-post {
+        
+        flex-direction: row;
+        
+        section {
+            order: 1;
+        }
+        
+        figure {
+            order: 2;
+        }
+        
+    }
+}
+
+@media only screen and (min-width: 320px) {
+}

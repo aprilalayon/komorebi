@@ -375,3 +375,6 @@ class Description_Walker extends Walker_Nav_Menu
                                 }
 
                                 ?>
+                                
+                               
+                              <img src="<?php the_field('event_image'); ?>" />

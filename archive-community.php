@@ -42,42 +42,48 @@ get_header(); ?>
                        if (function_exists ('get_field')){
                         
                            ?>
-                    
-                        <p>   
-                        <?php
-                        if(get_field('event_name')){
-                            the_field('event_name');
-                        }
-                        ?> 
-                        
-                        <br>
-                        
-                         
-                            <?php the_field('event_role'); ?> 
-                        
-                        
-                            <a href=" <?php the_field('event_link'); ?> "> 
-                            <p>Visit Site</p> 
-                        </a>
-                        
-                            <p class="event-summary">
-                                <?php the_field('event_summary'); ?>
-                            </p>
-                        
-                        
-                        
-                        
-                        <figure>
-                            <?php 
-
-                                
-                                $image = get_field('event_image');
-                                $size = 'community-image'; // (thumbnail, medium, large, full or custom size)
                            
-                                if( $image ) { 
-                                   
-                                    echo wp_get_attachment_image( $image, $size ); ?>
-                        </figure>
+                    <div class="community-post"> 
+        
+
+                            <section class="community-section">
+                                <h2 class="event-name">   
+                                <?php
+                                if(get_field('event_name')){
+                                    the_field('event_name');
+                                }
+                                ?> 
+
+                                </h2>
+
+
+                            <p class="event-role"> Role:  <?php the_field('event_role'); ?> </p>
+
+                            <hr>    
+                                <p class="event-summary">
+                                        <?php the_field('event_summary'); ?>
+                                    </p>
+
+                                    <a href=" <?php the_field('event_link'); ?> " class="visit-site"> 
+                                    Visit Site 
+                                </a>
+
+                            </section>
+                            
+                            <figure class="event-image">
+                                    <?php 
+
+
+                                        $image = get_field('event_image');
+                                        $size = 'community-image'; // (thumbnail, medium, large, full or custom size)
+
+                                        if( $image ) { 
+
+                                            echo wp_get_attachment_image( $image, $size ); ?>
+                                </figure>
+                    
+                    </div>
+                    
                            
                             <?php
                                 }
@@ -108,7 +114,7 @@ get_header(); ?>
 
 		endif; ?>
 		
-		</div><!--end of testimonials-->
+		</div><!--community body-->
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
