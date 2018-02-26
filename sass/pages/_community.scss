@@ -17,6 +17,7 @@
             color: white;
             font-family: $font-heading;
             font-size: 3em;
+            text-align: center;
         }
         
         
@@ -55,7 +56,7 @@
             }
             
             a {
-                background-color: $beige;
+                background-color: white;
                 padding: 10px 30px;
                 font-family: $font-heading;
                 text-transform: uppercase;
@@ -81,9 +82,10 @@
 
                 figure {
                     order: 1;
+                    text-align: center;
                 }
 
-                text-align: justify;
+               
                 
             }
         }
@@ -99,46 +101,74 @@
 @media only screen and (min-width: 900px) {
             
     
-    .community-post {
-        
-        flex-direction: row;
-        
-        section {
-            order: 1;
+    .community-body {
+
+        .community-post {
+            margin-bottom: 80px;
         }
+    
+        .odd  {
+            
+            display: flex;
+            flex-direction: row !important;
+            
+            section {
+                max-width: 400px;
+            }
+            
+            figure {
+                max-width: 400px;
+                margin-top: 0;
+                margin-right: 50px;
         
-        figure {
-            order: 2;
-            text-align: center;
+            }
+  
         }
+
+        .even {
+            
+            flex-direction: row-reverse !important;
+            
+            section {
+                max-width: 400px;
+                margin-right: 50px;
+            }
+            
+            figure {
+                margin-top: 0;
+                max-width: 400px;
         
-        text-align: justify;
-        
+            }
+  
+        }
     }
 
-    .community-body {
-            
-        flex-direction: row;
-    }
+    
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1200px) {
             
     
-    .community-post {
-        
-        flex-direction: row;
-        
-        section {
-            order: 1;
+    .community-body {
+    
+        .odd  {
+            
+            section {
+                max-width: 600px;
+            }
+            
+  
         }
-        
-        figure {
-            order: 2;
-        }
-        
-    }
-}
 
-@media only screen and (min-width: 320px) {
+        .even {
+            
+            section {
+                max-width: 600px;
+            }
+            
+  
+        }
+    }
+
+    
 }
