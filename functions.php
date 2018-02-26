@@ -107,6 +107,9 @@ function komorebi_content_width() {
 }
 add_action( 'after_setup_theme', 'komorebi_content_width', 0 );
 
+// odd or even
+$odd_or_even = 'odd';
+
 /**
  * Register widget area.
  *

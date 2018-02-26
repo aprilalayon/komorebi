@@ -82,6 +82,8 @@
                 figure {
                     order: 1;
                 }
+
+                text-align: justify;
                 
             }
         }
@@ -95,6 +97,32 @@
 }
 
 @media only screen and (min-width: 900px) {
+            
+    
+    .community-post {
+        
+        flex-direction: row;
+        
+        section {
+            order: 1;
+        }
+        
+        figure {
+            order: 2;
+            text-align: center;
+        }
+        
+        text-align: justify;
+        
+    }
+
+    .community-body {
+            
+        flex-direction: row;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
             
     
     .community-post {
