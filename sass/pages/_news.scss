@@ -1,0 +1,17 @@
+@media only screen and (min-width: 320px) {
+
+    body.blog {
+        background-image: url(http://localhost:8888/erica/wp-content/uploads/2018/02/Scan_20160123-8.png);
+        background-size: cover;
+        background-position: -100px 0%;
+        background-repeat: no-repeat;
+        z-index: 0;
+        
+        .content-area {
+            background-color: rgba(0, 0, 0, 0.3);
+            height: 100%;
+
+        }
+
+    }
+}

@@ -1057,10 +1057,7 @@ a:hover, a:active {
 	}
 }
 
-@media only screen and (min-width: 1130px) {
-	.site-content {
-		width: 77%;
-	}
+@media only screen and (min-width: 1000px) {
 	.site-flex {
 		display: -webkit-box;
 		display: -ms-flexbox;
@@ -1078,6 +1075,7 @@ a:hover, a:active {
 		-webkit-box-direction: normal;
 		    -ms-flex-direction: row;
 		        flex-direction: row;
+		width: 100%;
 	}
 	.about-col-1 {
 		background-color: #B8D6D1;
@@ -1229,7 +1227,7 @@ a:hover, a:active {
 	}
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 930px) {
 	.community-body .odd section {
 		max-width: 600px;
 	}
@@ -1268,6 +1266,20 @@ a:hover, a:active {
 	}
 	body.page-id-1755 {
 		background-position: center;
+	}
+}
+
+@media only screen and (min-width: 320px) {
+	body.blog {
+		background-image: url(http://localhost:8888/erica/wp-content/uploads/2018/02/Scan_20160123-8.png);
+		background-size: cover;
+		background-position: -100px 0%;
+		background-repeat: no-repeat;
+		z-index: 0;
+	}
+	body.blog .content-area {
+		background-color: rgba(0, 0, 0, 0.3);
+		height: 100%;
 	}
 }
 
@@ -1383,8 +1395,8 @@ a:hover, a:active {
 		background-repeat: no-repeat;
 		z-index: 0;
 	}
-	.work-content-area {
-		background-color: rgba(255, 255, 255, 0.3);
+	#primary.content-area.work-content-area {
+		background-color: black;
 		height: 100%;
 	}
 	.work-main {
@@ -1437,14 +1449,14 @@ a:hover, a:active {
 		position: absolute;
 		top: 50%;
 		left: 50%;
-		-webkit-transform: translate(-35%, -57%);
-		        transform: translate(-35%, -57%);
+		-webkit-transform: translate(-26%, -57%);
+		        transform: translate(-26%, -57%);
 	}
 	.work-main h1 {
 		font-size: 5.5em;
 	}
 	.work-main h1:first-child {
-		margin-right: 25%;
+		margin-right: 20%;
 	}
 }
 
