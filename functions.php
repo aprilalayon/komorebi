@@ -117,12 +117,12 @@ $odd_or_even = 'odd';
  */
 function komorebi_widgets_init() {
 	register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar', 'komorebi' ),
-		'id'            => 'sidebar-1',
+		'name'          => esc_html__( 'News Sidebar', 'komorebi' ),
+		'id'            => 'news-sidebar',
 		'description'   => esc_html__( 'Add widgets here.', 'komorebi' ),
-		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'before_widget' => '<section id="%1$s" class="news-sidebar-title-container widget %2$s">',
 		'after_widget'  => '</section>',
-		'before_title'  => '<h2 class="widget-title">',
+		'before_title'  => '<h2 class="news-sidebar-title">',
 		'after_title'   => '</h2>',
 	) );
     

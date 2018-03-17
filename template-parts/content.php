@@ -12,15 +12,14 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 		
-		<?php the_category() ?>
+			<?php the_category( '<p class="blog-category">', '</p>'); ?>
+	
+			<?php
+				the_title( '<h1 class="blog-title">', '</h1>' );
+			?>
 		
-		<?php
-		if ( is_singular() ) :
-			the_title( '<h1 class="entry-title">', '</h1>' );
-		else :
-			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-		endif;
 
+	<?php
 		if ( 'post' === get_post_type() ) : ?>
 		<div class="entry-meta">
 			<?php 
@@ -55,7 +54,5 @@
 		?>
 	</div><!-- .entry-content -->
 
-	<footer class="entry-footer">
-		<?php komorebi_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
+	
 </article><!-- #post-<?php the_ID(); ?> -->

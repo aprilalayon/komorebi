@@ -14,4 +14,43 @@
         }
 
     }
+
+    .post {
+
+        text-align: left-aligned;
+        margin: 50px 50px 0 50px;
+
+        .blog-title {
+            font-family: $font_heading;
+            color: white; 
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+        
+        .entry-header {
+            a {
+                list-style-type: none;
+                color: white;
+                background-color: $beige;
+                padding: 10px 30px;
+                text-transform: uppercase;
+                letter-spacing: .10em;
+                font-size: 0.8em;
+            }
+        }
+
+        .entry-meta {
+            color: $grey;
+            font-family: $font_body;
+            margin-bottom: 50px;
+        }
+
+        img {
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: white;
+        }
+    }
 }
