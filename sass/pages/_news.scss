@@ -28,29 +28,57 @@
         }
         
         .entry-header {
+
+            .blog-category:first-of-type {
+                margin-top: 20px;
+            }
+
             a {
                 list-style-type: none;
                 color: white;
                 background-color: $beige;
-                padding: 10px 30px;
+                padding: 10px 25px;
                 text-transform: uppercase;
                 letter-spacing: .10em;
-                font-size: 0.8em;
+                font-size: 10px;
             }
         }
 
         .entry-meta {
             color: $grey;
             font-family: $font_body;
-            margin-bottom: 50px;
+            margin-bottom: 20px;
         }
 
         img {
             margin-bottom: 20px;
+            margin-right: 2%;
         }
 
         p {
             color: white;
         }
     }
+}
+
+
+@media only screen and (min-width: 780px) {
+
+    .post {
+
+
+        .entry-content {
+            margin-top: 0;
+
+            .news-image-containter {
+                margin-top: 0;
+            }
+
+        .entry-meta {
+            margin-bottom: 0;
+        }
+        
+        }
+    }
+
 }

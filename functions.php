@@ -50,6 +50,7 @@ if ( ! function_exists( 'komorebi_setup' ) ) :
         
         add_image_size( 'about-profile', 500, 700, true );
         add_image_size( 'community-image', 800, 800, true );
+        add_image_size( 'news-image', 630, 280 );
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
