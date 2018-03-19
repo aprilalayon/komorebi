@@ -14,7 +14,7 @@
 		
 		<div class="category-container">
 			<?php 
-			the_category( '<p class="blog-category">', '</p>'); 
+			the_category(); 
 			?>
 		</div>
 		

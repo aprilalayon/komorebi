@@ -1279,7 +1279,6 @@ a:hover, a:active {
 	}
 	body.blog .content-area {
 		background-color: rgba(0, 0, 0, 0.3);
-		height: 100%;
 	}
 	.post {
 		text-align: left-aligned;
@@ -1291,10 +1290,18 @@ a:hover, a:active {
 		font-size: 3em;
 		margin-bottom: 10px;
 	}
-	.post .entry-header .blog-category:first-of-type {
-		margin-top: 20px;
+	.post .entry-header .category-container {
+		margin: 0;
 	}
-	.post .entry-header a {
+	.post .entry-header .post-categories {
+		margin: 0;
+		padding: 0;
+	}
+	.post .entry-header .post-categories li {
+		list-style-type: none;
+		margin: 0 0 20px 0;
+	}
+	.post .entry-header .post-categories a {
 		list-style-type: none;
 		color: white;
 		background-color: #D6B181;
@@ -1302,6 +1309,7 @@ a:hover, a:active {
 		text-transform: uppercase;
 		letter-spacing: .10em;
 		font-size: 10px;
+		margin-right: 5%;
 	}
 	.post .entry-meta {
 		color: #E2E2E2;
@@ -1318,6 +1326,29 @@ a:hover, a:active {
 }
 
 @media only screen and (min-width: 780px) {
+	.post .post-categories {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+	}
+	.post .post-categories li {
+		margin: 0 20px 0 0;
+	}
+	.post .entry-header h1.blog-title {
+		margin-top: 0;
+	}
+	.post .category-container {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: row;
+		        flex-direction: row;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+	}
 	.post .entry-content {
 		margin-top: 0;
 	}
@@ -1527,6 +1558,34 @@ a:hover, a:active {
 	.news-sidebar .news-sidebar-title {
 		font-family: "Signika", sans-serif;
 		margin: 0 50px 0 50px;
+	}
+}
+
+@media only screen and (min-width: 1300px) {
+	.blog-site-content {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: row;
+		        flex-direction: row;
+	}
+	.blog-site-content .content-area {
+		-webkit-box-flex: 3;
+		    -ms-flex: 3;
+		        flex: 3;
+	}
+	.blog-site-content aside {
+		-webkit-box-flex: 1;
+		    -ms-flex: 1;
+		        flex: 1;
+	}
+	.blog-site-content aside ul {
+		margin-left: 0;
+	}
+	.blog-site-content aside h2.news-sidebar-title {
+		margin-left: 30px;
 	}
 }
 
