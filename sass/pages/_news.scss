@@ -1,6 +1,8 @@
 @media only screen and (min-width: 320px) {
 
-    body.blog {
+    body.blog,
+    body.single,
+    body.archive {
         background-image: url(http://localhost:8888/erica/wp-content/uploads/2018/02/Scan_20160123-8.png);
         background-size: cover;
         background-position: -100px 0%;
@@ -17,7 +19,7 @@
     .post {
 
         text-align: left-aligned;
-        margin: 50px 50px 0 50px;
+        margin: 30px 50px 0 50px;
 
         .blog-title {
             font-family: $font_heading;
@@ -57,6 +59,7 @@
                     letter-spacing: .10em;
                     font-size: 10px;
                     margin-right: 5%; 
+                    border-radius: 5px;
                     
                     
                 }
@@ -78,6 +81,7 @@
             color: white;
         }
     }
+
 }
 
 

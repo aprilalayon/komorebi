@@ -1,0 +1,71 @@
+@media only screen and (min-width: 320px) {
+
+    body.page-id-1772{
+        background-image: url(http://localhost:8888/erica/wp-content/uploads/2018/02/Scan_20160415-16.png);
+        background-size: cover;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        z-index: 0;
+        
+        .site-content {
+            width: 100%;
+        }
+
+        .content-area {
+            background-color: rgba(0, 0, 0, 0.3);
+            height: 100%;
+
+        }
+
+    }
+
+
+    .post-1772 {
+
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        
+        .entry-header {
+
+            text-align: center;
+
+            h1 {
+            font-family: $font_heading;
+            font-size: 2.3em;
+            background-color: $light-green;
+            display: inline-block;
+            padding: 10px 20px;
+            color: white;
+            border-radius: 5px; 
+            margin-top: 50px;
+           
+
+            }
+        }
+
+        .wpcf7-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+           font-family: $font_body;
+           color: white;
+
+           label {
+
+               display: inline-block;
+           }
+
+           .wpcf7-submit {
+                background-color: white;
+                font-family: $font_heading;
+                font-size: 1em;
+                border: none;
+                width: 100%;
+                padding: 10px 30px;
+                
+           }
+        }
+    }
+
+}
