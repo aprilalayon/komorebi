@@ -15,24 +15,54 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
+		<main id="main" class="site-main art-main" role="main">
 
-			<?php
-			while ( have_posts() ) : the_post();
+                
+            <?php 
+                $args = array(
+                    'post_status' => 'inherit',
+                    'post_type'=> 'attachment',
+                    'posts_per_page' => -1,
+                );
 
-				get_template_part( 'template-parts/content', 'page' );
+                $images = new WP_Query($args);?>
 
-				// If comments are open or we have at least one comment, load up the comment template.
-				if ( comments_open() || get_comments_number() ) :
-					comments_template();
-				endif;
+            <?php if ( $images->have_posts() ) : ?>
+            
+             <div id="item-list" class="gallery-grid">
+            	<div class="grid-sizer">	
+                <?php while ( $images->have_posts() ) {
+                        $images->the_post(); 
 
-			endwhile; // End of the loop.
-			?>
+                            $termList = get_the_terms( $post->ID, 'image-types' );  //Get the assigned terms for a particular item
+                            $termName = ""; //initialize the string that will contain the terms                        
+    
+                            if ($termList) {
+                                    foreach ( $termList as $term ) { // for each term 
+                                    $termName .= $term->slug.' '; //create a string that has all the slugs 
+                                }
+                                    
+                                echo '<div class="' . $termName . 'item">';
+                                
+                                echo '<a href="' . wp_get_attachment_url($post->ID) . '"class="swipebox" title="' . get_post($post->ID)->post_excerpt . '">';
+                                
+                                echo wp_get_attachment_image( $post->ID, 'artwork-image' );
+                                
+                                echo '</a>';
+                                echo '</div>';
+                            }
+                ?> 
+                        
+				<?php }  ?>
+					</div>
+                </div> <!-- end item-list -->
+            <?php endif; ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
 <?php
-//get_sidebar();
+
 get_footer();
+
+?>

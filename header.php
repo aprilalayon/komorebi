@@ -31,17 +31,21 @@
 	
     <div class="mid-header">
 		<div class="site-branding">
-			
-           <?php 
-           $custom_logo_id = get_theme_mod( 'custom_logo' );
-            $logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
-            if ( has_custom_logo() ) {
-                    echo '<img src="'. esc_url( $logo[0] ) .'" class="logo">';
-            } else {
-                    echo '<h1>'. get_bloginfo( 'name' ) .'</h1>';
-            }
             
-            ?>
+        <a href="<?php $url = home_url(); echo esc_url( $url ); ?>" >
+
+                    <?php 
+                    $custom_logo_id = get_theme_mod( 'custom_logo' );
+                        $logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
+                        if ( has_custom_logo() ) {
+                                echo '<img src="'. esc_url( $logo[0] ) .'" class="logo">';
+                        } else {
+                                echo '<h1>'. get_bloginfo( 'name' ) .'</h1>';
+                        }
+                        
+                        ?>
+
+        </a>
 
 		</div><!-- .site-branding -->
 

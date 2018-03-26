@@ -51,6 +51,7 @@ if ( ! function_exists( 'komorebi_setup' ) ) :
         add_image_size( 'about-profile', 500, 700, true );
         add_image_size( 'community-image', 800, 800, true );
         add_image_size( 'news-image', 630, 280 );
+        add_image_size( 'artwork-image', 250, 250, true);
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
@@ -93,6 +94,7 @@ if ( ! function_exists( 'komorebi_setup' ) ) :
 	}
 endif;
 add_action( 'after_setup_theme', 'komorebi_setup' );
+
 
 
 
@@ -155,16 +157,67 @@ function komorebi_scripts() {
     
     wp_enqueue_script( 'komorebi_bootstrap_js', get_template_directory_uri() . '/js/bootstrap.min.js', array( 'jquery' ), '20171129', true );
 
-	wp_enqueue_script( 'komorebi-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
+    wp_enqueue_script( 'komorebi-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'komorebi-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
     
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
-	}
+    }
+   
+/**
+* Enqueue jQuery, imagesLoaded, Isotope and its settings.
+*/
+   if ( is_page( 'art' ) ) {
+       wp_enqueue_script( 'komorebi-imagesloaded', get_template_directory_uri() . '/js/imagesloaded.pkgd.min.js', array( 'jquery' ), '4.1.1', true );
+       
+       wp_enqueue_script( 'komorebi-isotope', get_template_directory_uri() . '/js/isotope.pkgd.min.js', array( 'jquery' ), '3.0.1', true );
+       
+       wp_enqueue_script( 'komorebi-isotope-settings', get_template_directory_uri() . '/js/isotope-settings.js', array( 'jquery' ), '1.0', true );
+   }
+
+   if(is_page ('art') ){
+
+    wp_enqueue_style( 'komorebi-swipebox', get_template_directory_uri() . '/css/swipebox.css');
+
+    wp_enqueue_script( 'komorebi-swipebox-js', get_template_directory_uri() . '/js/jquery.swipebox.js', array('jquery'), '', true );
+    
+    wp_enqueue_script( 'komorebi-swipebox-settings', get_template_directory_uri() . '/js/swipebox-settings.js', array('jquery'), '', true );
+}
+
 }
 add_action( 'wp_enqueue_scripts', 'komorebi_scripts' );
+
+
+// Rename Posts to News in Menu
+function komorebi_change_media_menu_label() {
+    global $menu;
+    global $submenu;
+    $menu[10][0] = 'Artwork';
+    $submenu['upload.php'][5][0] = 'Artwork Images';
+    $submenu['upload.php'][10][0] = 'Add Images';
+}
+add_action( 'admin_menu', 'komorebi_change_media_menu_label' );
+
+// Change Media to Artwork menu 
+
+function komorebi_change_media_label() {
+    global $wp_post_types;
+    $labels = &$wp_post_types['attachment']->labels;
+    $labels->name = 'Artwork';
+    $labels->singular_name = 'Artwork Item';
+    $labels->add_new = 'Add Artwork Item';
+    $labels->add_new_item = 'Add Artwork Item';
+    $labels->edit_item = 'Edit Artwork Item';
+    $labels->new_item = 'Artwork Item';
+    $labels->view_item = 'View Artwork Item';
+    $labels->search_items = 'Search Artwork Items';
+    $labels->not_found = 'No Artwork Items found';
+    $labels->not_found_in_trash = 'No Artwork Items found in Trash';
+}
+add_action( 'admin_menu', 'komorebi_change_media_label' );
+
 
 /**
  * Custom Post Types
@@ -345,6 +398,34 @@ function komorebi_register_taxonomies() {
         'rewrite'               => array( 'slug' => 'featured' ),
     );
     register_taxonomy( 'featured', array( 'work' ), $args );
+
+
+    $labels = array(
+        'name'              => _x( 'Image Types', 'taxonomy general name' ),
+        'singular_name'     => _x( 'Image Type', 'taxonomy singular name' ),
+        'search_items'      => __( 'Search Image Types' ),
+        'all_items'         => __( 'All Image Types' ),
+        'parent_item'       => __( 'Parent Image Type' ),
+        'parent_item_colon' => __( 'Parent Image Type:' ),
+        'edit_item'         => __( 'Edit Image Type' ),
+        'view_item'         => __( 'View Image Type' ),
+        'update_item'       => __( 'Update Image Type' ),
+        'add_new_item'      => __( 'Add New Image Type' ),
+        'new_item_name'     => __( 'New Image Type Name' ),
+        'menu_name'         => __( 'Image Type' ),
+    );
+    $args = array(
+        'hierarchical'      => true,
+        'labels'            => $labels,
+        'show_ui'           => true,
+        'show_in_menu'      => true,
+        'show_in_nav_menu'  => true,
+        'show_admin_column' => true,
+        'query_var'         => true,
+        'rewrite'           => array( 'slug' => 'image-types' ),
+    );
+    register_taxonomy( 'image-types', array( 'attachment' ), $args );
+
 }
 
 add_action( 'init', 'komorebi_register_taxonomies');

@@ -1,3 +1,20 @@
+Gallery filters
+
+<ul id="filters">
+                <li><a href="#" data-filter="*" class="selected">All</a></li>
+                
+                <?php 
+                    $terms = get_terms('image-types', array( "hide_empty" => 0 )  );
+                    $count = count($terms); //How many are they?
+                    if ( $count > 0 ){  //If there are more than 0 terms
+                        foreach ( $terms as $term ) {  //for each term:
+                            echo "<li><a href='#' data-filter='.".$term->slug."'>" . $term->name . "</a></li>";
+                        }
+                    } 
+                ?>
+</ul>
+
+
 <?php
 wp_nav_menu( array(
     'theme_location' => 'menu-1',

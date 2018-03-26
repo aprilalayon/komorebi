@@ -153,6 +153,10 @@
         display: flex;
         justify-content: center;
 
+        a {
+            width: 300px;
+        }
+
         .logo {
             margin: 1.8em auto;
             max-width: 100%;

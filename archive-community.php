@@ -44,7 +44,7 @@ get_header(); ?>
                            ?>
                            
                     <div class="community-post <?php echo $odd_or_even; $odd_or_even = ('odd'==$odd_or_even) ? 'even' : 'odd'; ?>">
-> 
+
         
 
                             <section class="community-section">
