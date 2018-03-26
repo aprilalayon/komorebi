@@ -23,15 +23,14 @@ jQuery(function ($) {
         masonry: {
 			columnWidth: 10,
 			hiddenStyle: {
-				position: 'absolute',
-				position: 'relative',
+				position: 'absolute'
 				display: 'none'
 			},
 			visibleStyle: {
-				position: 'none',
+				position: 'none'
 				display: 'block'
 			},
-			resize: true,
+			// resize: true,
 			stagger: 50,
             // rowHeight: 50,
 			// gutter: 10,

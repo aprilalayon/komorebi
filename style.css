@@ -1108,8 +1108,7 @@ a:hover, a:active {
 }
 
 .gallery-grid {
-	margin: 50px auto;
-	text-align: center;
+	margin: 20px auto;
 }
 
 .gallery-grid .item {
