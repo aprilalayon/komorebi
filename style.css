@@ -1604,6 +1604,7 @@ a:hover, a:active {
 		text-align: center;
 		padding: 20px 40px;
 		text-transform: uppercase;
+		border-radius: 5px;
 	}
 	.work-main h1 a {
 		color: white;
