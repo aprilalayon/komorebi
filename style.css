@@ -1481,6 +1481,7 @@ a:hover, a:active {
 		text-transform: uppercase;
 		background-color: #B8D6D1;
 		color: white;
+		border-radius: 5px;
 	}
 	.print-main h1 a {
 		color: white;
@@ -1496,6 +1497,7 @@ a:hover, a:active {
 		color: #39443C;
 		text-align: center;
 		padding: 10px 40px;
+		border-radius: 5px;
 	}
 }
 
@@ -1530,6 +1532,7 @@ a:hover, a:active {
 		text-transform: uppercase;
 		background-color: #D6B181;
 		color: white;
+		border-radius: 5px;
 	}
 	.web-main h1 a {
 		color: white;
@@ -1545,6 +1548,16 @@ a:hover, a:active {
 		color: #39443C;
 		text-align: center;
 		padding: 10px 40px;
+		border-radius: 5px;
+	}
+	.web-main p a {
+		color: white;
+	}
+	.web-main p a:hover,
+	.web-main p a:focus,
+	.web-main p a:active {
+		text-decoration: none;
+		color: firebrick;
 	}
 }
 
