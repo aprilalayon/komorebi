@@ -1107,17 +1107,30 @@ a:hover, a:active {
 	}
 }
 
-.gallery-grid {
-	margin: 20px auto;
+@media only screen and (min-width: 320px) {
+	.gallery-grid {
+		margin: 20px auto;
+	}
+	.gallery-grid .grid-sizer {
+		margin: 0 auto;
+		text-align: center;
+	}
+	.gallery-grid .item {
+		margin: 0 1% 1% 0;
+		display: inline-block;
+	}
+	.gallery-grid .item--width2 {
+		width: 40%;
+	}
 }
 
-.gallery-grid .item {
-	margin: 0 0 1% 1%;
-	float: left;
-}
-
-.gallery-grid .item--width2 {
-	width: 40%;
+@media only screen and (min-width: 1000px) {
+	.grid-sizer {
+		text-align: left;
+	}
+	.item {
+		margin: 0 0 1% 1%;
+	}
 }
 
 @media only screen and (min-width: 320px) {
@@ -1604,7 +1617,7 @@ a:hover, a:active {
 		text-align: center;
 		padding: 20px 40px;
 		text-transform: uppercase;
-		border-radius: 5px;
+		border-radius: 10px;
 	}
 	.work-main h1 a {
 		color: white;

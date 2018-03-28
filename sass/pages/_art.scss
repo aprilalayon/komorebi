@@ -1,19 +1,36 @@
-.gallery-grid {
-    margin: 20px auto;
-    
+@media only screen and (min-width: 320px) {
+
+    .gallery-grid {
+        margin: 20px auto;
+        
+        .grid-sizer,
+        {
+            // margin-bottom: 2%;
+            // float: left;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .item {
+            margin: 0 1% 1% 0;
+            display: inline-block;
+        }
+
+        .item--width2 {
+            width: 40%;
+        }
+    }
+
+}
+
+@media only screen and (min-width: 1000px) {
+
     .grid-sizer,
-    .item {
-        // margin-bottom: 2%;
-        // float: left;
-        // width: 20%;
+    {
+        text-align: left;
     }
 
     .item {
         margin: 0 0 1% 1%;
-        float: left;
-    }
-
-    .item--width2 {
-        width: 40%;
     }
 }
