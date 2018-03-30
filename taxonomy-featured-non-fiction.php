@@ -10,13 +10,13 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area web-content-area">
-		<main id="main" class="site-main web-main">
+	<div id="primary" class="content-area non-fiction-content-area">
+		<main id="main" class="site-main non-fiction-main">
 
 		<?php
 		if ( have_posts() ) : ?>
 
-            <h1>Web</h1>
+            <h1>Non-fiction</h1>
             
 
                 <div class ="work-body">
@@ -31,7 +31,7 @@ get_header(); ?>
                         array (
                             'taxonomy' => 'featured',
                             'field' => 'slug',
-                            'terms' => 'web',
+                            'terms' => 'non-fiction',
                         )
                     ),
                 ); 

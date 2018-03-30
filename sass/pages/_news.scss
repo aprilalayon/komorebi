@@ -1,6 +1,7 @@
 @media only screen and (min-width: 320px) {
     .blog-site-content #primary {
         margin-left: 0;
+
     }
 
     body.blog,
@@ -8,13 +9,20 @@
     body.archive {
         background-image: url(http://localhost:8888/erica/wp-content/uploads/2018/02/Scan_20160123-8.png);
         background-size: cover;
-        background-position: -100px 0%;
+        background-position: 4px 0%;
         background-repeat: no-repeat;
         z-index: 0;
         
         .content-area {
             background-color: rgba(0, 0, 0, 0.3);
+            background-position: fixed !important;
+            width:100%;
+            height:100%;
+            top:0px;
+            left:0px;
+            z-index:0;
             padding-top: 20px;
+            padding-bottom: 400px;
         }
 
     }

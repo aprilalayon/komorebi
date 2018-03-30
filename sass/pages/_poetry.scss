@@ -3,12 +3,12 @@
 
 @media only screen and (min-width: 320px) {
 
-    .print-content-area {
+    .poetry-content-area {
         background-color: rgba(255, 255, 255, 0.2);
         height:100%;
     }
 
-    .print-main {
+    .poetry-main {
         z-index: 1000;
         position: absolute;
         top: 50%;
@@ -24,19 +24,7 @@
             background-color: $light_green;
             color: white;
             border-radius: 5px;
-
             
-            a {
-                color: white;
-                text-decoration: none;
-                
-                a:hover,
-                a:focus,
-                a:active {
-                    text-decoration: none;
-                }
-            
-            }
         }
         
         p {
@@ -45,6 +33,17 @@
             text-align: center;
             padding: 10px 40px;
             border-radius: 5px;
+
+            a {
+                color: white;
+            }
+
+            a:hover,
+            a:focus,
+            a:active {
+                text-decoration: none;
+                color: orangered;
+            }
         }
 
     }
@@ -53,7 +52,7 @@
 
 @media only screen and (min-width: 1000px) and (min-height: 649px){
     
-    .print-main {
+    .poetry-main {
         position: absolute;
         top: 50%;
         left: 50%;

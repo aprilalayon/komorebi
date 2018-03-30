@@ -64,6 +64,8 @@
                 border: none;
                 width: 100%;
                 padding: 10px 30px;
+                width: 344px;
+                display: inherit;
                 
            }
 
@@ -88,6 +90,10 @@
 
     }
 
+    .entry-header h1 {
+        width: 500px;
+    }
+
     input[type="text"], 
     input[type="email"] {
         width: 500px;
@@ -102,6 +108,13 @@
 
     input {
         font-size: 2rem;
+    }
+
+    .post-1772 .wpcf7-form .wpcf7-submit {
+        width: 500px;
+        height: 50px;
+        text-align: center;
+        display: inherit;
     }
 
 }

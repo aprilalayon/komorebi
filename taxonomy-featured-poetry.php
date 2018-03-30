@@ -10,13 +10,13 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area print-content-area">
-		<main id="main" class="site-main print-main">
+	<div id="primary" class="content-area poetry-content-area">
+		<main id="main" class="site-main poetry-main">
 
 		<?php
 		if ( have_posts() ) : ?>
 
-            <h1>Print</h1>
+            <h1>Poetry</h1>
             
 
                 <div class ="work-body">
@@ -31,7 +31,7 @@ get_header(); ?>
                         array (
                             'taxonomy' => 'featured',
                             'field' => 'slug',
-                            'terms' => 'print',
+                            'terms' => 'poetry',
                         )
                     ),
                 ); 
@@ -59,7 +59,9 @@ get_header(); ?>
                         &#11049;
                         
                          
+                        <a href=" <?php the_field('work_link'); ?> "> 
                             <?php the_field('work_title'); ?> 
+                        </a>
                         
                         </p>
                         

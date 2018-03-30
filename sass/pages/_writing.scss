@@ -5,8 +5,8 @@
 
 
     body.post-type-archive-work,
-    body.term-190,
-    body.term-191 {
+    body.term-201,
+    body.term-202 {
         margin: 0px;
         padding: 0px;
         width: 100%;
@@ -36,17 +36,19 @@
         
         h1 {
             font-family: $font_heading;
-            font-size: 3em;
+            font-size: 1.5em;
             text-align: center;
             padding: 20px 40px;
             text-transform: uppercase;
-            border-radius: 10px;
+            border-radius: 5px;
+            width: 300px;
 
             
-            a {
-                color: white;
-                text-decoration: none;
-                
+                a {
+                    color: white;
+                    text-decoration: none;
+                }
+                    
                 a:hover,
                 a:focus,
                 a:active {
@@ -54,7 +56,7 @@
                 }
             
             }
-        }
+        
         
         h1:first-child {
                 background-color: $beige;
@@ -64,29 +66,44 @@
                 background-color: $light-green;
             }
 
+        h1:hover {
+            background-color: $dark-green;
+            color: white;
+        }
+
     }
     
+}
+
+
+
+@media only screen and (min-width: 600px) {
+    .work-main h1 {
+        font-size: 2.7em;
+        width: 500px
+    }
 }
 
 @media only screen and (min-width: 1000px) and (min-height: 649px){
     
     body.post-type-archive-work,
-    body.term-190,
-    body.term-191 {
-        background-position: 200px 0px;
+    body.term-201,
+    body.term-202 {
+        background-position: 0px 20px;
     }
     
 
     .work-main {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-26%, -57%);
         
         h1 {
-            font-size: 5.5em;
+            font-size: 3.5em;
+            width: 600px;
         }
         
         h1:first-child {

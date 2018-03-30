@@ -48,8 +48,15 @@
         order: 1;
 
         p {
-            margin: 20px;
+            margin: 150px 30px 30px 30px;
             font-family: $font_body;
+            font-size: 1.3em;
+            line-height: 1.5em;
+
+            a {
+                text-decoration: none;
+                color: white;
+            }
         }
 
     }
