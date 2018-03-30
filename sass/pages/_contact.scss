@@ -66,6 +66,10 @@
                 padding: 10px 30px;
                 
            }
+
+           p {
+               margin-bottom: 0.5em;
+           }
         }
     }
 
@@ -81,6 +85,23 @@
     body.page-id-1772 .content-area {
         margin-top: 0px;
         margin-left: 300px;
+
+    }
+
+    input[type="text"], 
+    input[type="email"] {
+        width: 500px;
+        height: 50px;
+
+    }
+
+    textarea {
+        width: 500px;
+        height: 200px;
+    }
+
+    input {
+        font-size: 2rem;
     }
 
 }

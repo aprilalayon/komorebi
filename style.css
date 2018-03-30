@@ -1374,6 +1374,9 @@ a:hover, a:active {
 		width: 100%;
 		padding: 10px 30px;
 	}
+	.post-1772 .wpcf7-form p {
+		margin-bottom: 0.5em;
+	}
 }
 
 @media only screen and (min-width: 700px) {
@@ -1386,6 +1389,18 @@ a:hover, a:active {
 	body.page-id-1772 .content-area {
 		margin-top: 0px;
 		margin-left: 300px;
+	}
+	input[type="text"],
+	input[type="email"] {
+		width: 500px;
+		height: 50px;
+	}
+	textarea {
+		width: 500px;
+		height: 200px;
+	}
+	input {
+		font-size: 2rem;
 	}
 }
 
