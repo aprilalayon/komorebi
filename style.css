@@ -604,10 +604,6 @@ a:hover, a:active {
 	width: 300px;
 }
 
-#primary {
-	margin-left: 300px;
-}
-
 .site-header {
 	padding-right: 3%;
 	padding-left: 3%;
@@ -1041,7 +1037,7 @@ a:hover, a:active {
 # Pages
 --------------------------------------------------------------*/
 @media only screen and (min-width: 320px) {
-	.site-main {
+	.column-container {
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
@@ -1049,6 +1045,7 @@ a:hover, a:active {
 		-webkit-box-direction: normal;
 		    -ms-flex-direction: column;
 		        flex-direction: column;
+		margin-top: 195px;
 	}
 	.about-col-1 {
 		-webkit-box-ordinal-group: 3;
@@ -1088,6 +1085,8 @@ a:hover, a:active {
 		    -ms-flex-direction: row;
 		        flex-direction: row;
 		width: 100%;
+		margin-top: 0;
+		padding-left: 300px;
 	}
 	.about-col-1 {
 		background-color: #B8D6D1;
@@ -1117,6 +1116,9 @@ a:hover, a:active {
 }
 
 @media only screen and (min-width: 320px) {
+	.art-main {
+		margin-top: 205px;
+	}
 	.gallery-grid {
 		margin: 20px auto;
 	}
@@ -1134,7 +1136,10 @@ a:hover, a:active {
 }
 
 @media only screen and (min-width: 1000px) {
-	.grid-sizer {
+	.art-main {
+		margin-top: 0;
+	}
+	.gallery-grid .grid-sizer {
 		text-align: left;
 	}
 	.item {
@@ -1152,6 +1157,8 @@ a:hover, a:active {
 	}
 	body.post-type-archive-community .community-content-area {
 		background-color: rgba(0, 0, 0, 0.3);
+		padding-top: 200px;
+		padding-right: 40px;
 	}
 	body.post-type-archive-community h1 {
 		margin: 30px 50px;
@@ -1159,6 +1166,9 @@ a:hover, a:active {
 		font-family: "Signika", sans-serif;
 		font-size: 3em;
 		text-align: center;
+	}
+	body.post-type-archive-community .community-main {
+		padding-top: 200px;
 	}
 	body.post-type-archive-community .community-body {
 		margin: 10px 30px;
@@ -1228,6 +1238,9 @@ a:hover, a:active {
 }
 
 @media only screen and (min-width: 900px) {
+	body.post-type-archive-community .community-content-area {
+		padding-top: 220px;
+	}
 	.community-body .community-post {
 		margin-bottom: 80px;
 	}
@@ -1265,11 +1278,33 @@ a:hover, a:active {
 }
 
 @media only screen and (min-width: 930px) {
+	.community-content-area {
+		padding-top: 20px;
+	}
 	.community-body .odd section {
 		max-width: 600px;
 	}
 	.community-body .even section {
 		max-width: 600px;
+	}
+}
+
+@media only screen and (min-width: 931px) and (max-width: 999px) {
+	.community-content-area {
+		padding-top: 0;
+	}
+}
+
+@media only screen and (min-width: 1000px) {
+	body.post-type-archive-community .community-main {
+		padding: 0;
+	}
+	body.post-type-archive-community .community-content-area {
+		padding-top: 0;
+		padding-left: 310px;
+	}
+	body.post-type-archive-community h1 {
+		text-align: center;
 	}
 }
 
@@ -1287,6 +1322,7 @@ a:hover, a:active {
 	body.page-id-1772 .content-area {
 		background-color: rgba(0, 0, 0, 0.3);
 		height: 100%;
+		margin-top: 200px;
 	}
 	.post-1772 {
 		display: -webkit-box;
@@ -1340,6 +1376,19 @@ a:hover, a:active {
 	}
 }
 
+@media only screen and (min-width: 700px) {
+	body.page-id-1772 .content-area {
+		padding-top: 20px;
+	}
+}
+
+@media only screen and (min-width: 1000px) {
+	body.page-id-1772 .content-area {
+		margin-top: 0px;
+		margin-left: 300px;
+	}
+}
+
 .home {
 	margin: 0px;
 	padding: 0px;
@@ -1369,12 +1418,12 @@ a:hover, a:active {
 		height: auto;
 	}
 	body.page-id-1755 {
-		background-position: 0% 32px;
+		background-position: 0 0;
 	}
 }
 
 @media only screen and (min-width: 320px) {
-	#primary {
+	.blog-site-content #primary {
 		margin-left: 0;
 	}
 	body.blog,
@@ -1390,6 +1439,7 @@ a:hover, a:active {
 	body.single .content-area,
 	body.archive .content-area {
 		background-color: rgba(0, 0, 0, 0.3);
+		padding-top: 20px;
 	}
 	.post {
 		text-align: left-aligned;
@@ -1473,15 +1523,11 @@ a:hover, a:active {
 }
 
 @media only screen and (min-width: 1000px) {
+	.blog-site-content #primary {
+		margin-left: 300px;
+	}
 	.post {
 		margin-top: 50px;
-	}
-	#masthead {
-		position: fixed;
-		width: 300px;
-	}
-	#primary {
-		margin-left: 300px;
 	}
 }
 
