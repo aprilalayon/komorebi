@@ -12,4 +12,24 @@
 
     }
 
+    .archive-main article {
+        margin-top: 25px;
+    }
+
+    .archive-main .page-header {
+        margin-top: 180px;
+    }
+
+}
+
+@media only screen and (min-width: 1000px) {
+
+    .archive-main article {
+        margin-top: 20px;
+    }
+
+    .archive-main .page-header {
+        margin-top: 0;
+    }
+
 }

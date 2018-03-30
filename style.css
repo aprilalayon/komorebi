@@ -1554,6 +1554,21 @@ a:hover, a:active {
 		border-radius: 5px;
 		margin: 50px 0 0 50px;
 	}
+	.archive-main article {
+		margin-top: 25px;
+	}
+	.archive-main .page-header {
+		margin-top: 180px;
+	}
+}
+
+@media only screen and (min-width: 1000px) {
+	.archive-main article {
+		margin-top: 20px;
+	}
+	.archive-main .page-header {
+		margin-top: 0;
+	}
 }
 
 @media only screen and (min-width: 320px) {
