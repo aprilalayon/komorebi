@@ -1,38 +1,57 @@
-// Media Queries
-
-
 @media only screen and (min-width: 320px) {
 
-    .poetry-content-area {
-        background-color: rgba(255, 255, 255, 0.2);
-        height:100%;
-    }
-
+    
+    body.term-201 {
+        background-image: url(http://localhost:8888/erica/wp-content/uploads/2017/12/Scan_20160123-3.png);
+        background-size: cover;
+        background-position: 0% 200px;
+        background-repeat: repeat;
+        background-attachment: fixed;
+        background-position: center;
+        z-index: 0;
+        
+}
+    
     .poetry-main {
-        z-index: 1000;
         position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -18%);    
+        padding: 5%;
+        margin-top: 200px;
+        background-color: rgba(0, 0, 0, 0.3);
+        width: 100%;
+        height: 100vh;
         
         h1 {
             font-family: $font_heading;
-            font-size: 3em;
-            text-align: center;
+            font-size: 1.8em;
+            text-align: left;
             padding: 20px 40px;
             text-transform: uppercase;
-            background-color: $light_green;
+            background-color: $light-green;
             color: white;
             border-radius: 5px;
+            display: inline-block;
+
             
+            a {
+                color: white;
+                text-decoration: none;
+                
+                a:hover,
+                a:focus,
+                a:active {
+                    text-decoration: none;
+                }
+            
+            }
         }
         
         p {
             background-color: $light-green;
             color: $dark-green;
-            text-align: center;
+            text-align: left;
             padding: 10px 40px;
             border-radius: 5px;
+            display: inline-block;
 
             a {
                 color: white;
@@ -42,7 +61,7 @@
             a:focus,
             a:active {
                 text-decoration: none;
-                color: orangered;
+                color:lightcoral;
             }
         }
 
@@ -52,11 +71,19 @@
 
 @media only screen and (min-width: 1000px) and (min-height: 649px){
     
+ 
+
     .poetry-main {
+        margin-left: 300px;
+        margin-top: 0;
         position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-18%, -90%);
+        top: 0;
+        left: 0;
+        overflow: auto;
+        
+        h1 {
+            font-size: 3em;
+        }
     }
     
 }

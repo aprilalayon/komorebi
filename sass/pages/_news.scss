@@ -11,21 +11,21 @@
         background-size: cover;
         background-position: 4px 0%;
         background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
         z-index: 0;
-        
-        .content-area {
-            background-color: rgba(0, 0, 0, 0.3);
-            background-position: fixed !important;
-            width:100%;
-            height:100%;
-            top:0px;
-            left:0px;
-            z-index:0;
-            padding-top: 20px;
-            padding-bottom: 400px;
-        }
 
     }
+
+    .blog-site-content .content-area {
+            background-color: rgba(0, 0, 0, 0.3);
+            background-attachment: fixed;
+            width: 100%;
+            height: auto;
+            z-index: 0;
+            padding-top: 20px;
+            padding-bottom: 300px;
+        }
 
     .post {
 
@@ -155,6 +155,19 @@
 
 
 @media only screen and (min-width: 1250px) {
+
+
+    body.blog,
+    body.single,
+    body.archive {
+        
+        
+        .content-area {
+            // margin-right: 300px;
+
+        }
+
+    }
 
     .blog-site-content {
         margin-right: 300px;

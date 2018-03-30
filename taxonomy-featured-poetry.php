@@ -48,22 +48,28 @@ get_header(); ?>
                        if (function_exists ('get_field')){
                         
                            ?>
-                    
-                        <p>   
-                        <?php
-                        if(get_field('publication')){
-                            the_field('publication');
-                        }
-                        ?> 
                         
-                        &#11049;
-                        
-                         
-                        <a href=" <?php the_field('work_link'); ?> "> 
-                            <?php the_field('work_title'); ?> 
-                        </a>
-                        
-                        </p>
+                            <p> 
+                                
+                                <a href=" <?php the_field('work_link'); ?> "> 
+                                    <?php the_field('work_title'); ?>
+                                </a>
+                                
+                                <?php
+                                if(get_field('publication')){
+                                    the_field('publication');
+                                }
+                                ?>
+                            
+
+                                <?php
+                                if(get_field('issue')){
+                                    the_field('issue');
+                                }
+                                ?>
+
+
+                            </p>
                         
                         <?php
 
@@ -79,7 +85,8 @@ get_header(); ?>
 
 
 
-			<?php the_posts_navigation();
+            <?php 
+            // the_posts_navigation();
 
 		else :
 
