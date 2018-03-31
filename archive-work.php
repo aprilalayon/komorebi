@@ -12,11 +12,11 @@ get_header(); ?>
 	<div id="primary" class="content-area work-content-area">
 		
 		<main id="main" class="site-main work-main">
-    
+	
+			<h1><a href="http://localhost:8888/erica/featured/poetry/" class="link-title">poetry</a></h1> 
             
             <h1><a href="http://localhost:8888/erica/featured/non-fiction/" class="link-title">non-fiction</a></h1>
-        
-            <h1><a href="http://localhost:8888/erica/featured/poetry/" class="link-title">poetry</a></h1>            
+                   
 
 		</main><!-- #main -->
 
