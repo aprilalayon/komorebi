@@ -25,7 +25,7 @@ get_header(); ?>
                 $args = array (
 
                     'post_type' => 'work',
-                    'orderby'   => 'desc',
+                    'orderby'   => 'ASC',
                     'posts_per_page' => 30,
                     'tax_query' => array(
                         array (

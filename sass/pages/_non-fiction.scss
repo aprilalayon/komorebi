@@ -52,14 +52,14 @@
             display: inline-block;
 
             a {
-                color: white;
+                color: lightcoral;
             }
 
             a:hover,
             a:focus,
             a:active {
                 text-decoration: none;
-                color:lightcoral;
+                color:white;
             }
         }
 
@@ -74,7 +74,7 @@
     .non-fiction-main {
         margin-left: 300px;
         margin-top: 0;
-        padding-bottom: 200px;
+        padding-bottom: 220px;
         position: absolute;
         top: 0;
         left: 0;

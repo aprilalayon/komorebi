@@ -17,7 +17,7 @@
         padding: 5%;
         margin-top: 200px;
         background-color: rgba(0, 0, 0, 0.3);
-        width: 100%;
+        width: 80%;
         height: 100vh;
         
         h1 {
@@ -54,14 +54,14 @@
             display: inline-block;
 
             a {
-                color: white;
+                color: lightcoral;
             }
 
             a:hover,
             a:focus,
             a:active {
                 text-decoration: none;
-                color:lightcoral;
+                color:white;
             }
         }
 
