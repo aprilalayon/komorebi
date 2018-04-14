@@ -30,6 +30,12 @@
     }
 }
 
+@media only screen and (min-width: 900px) {
+    .news-sidebar {
+        margin-left: 300px;
+    }
+}
+
 @media only screen and (min-width: 1300px) {
 
     .blog-site-content {

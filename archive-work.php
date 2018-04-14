@@ -13,9 +13,9 @@ get_header(); ?>
 		
 		<main id="main" class="site-main work-main">
 	
-			<h1><a href="http://localhost:8888/erica/featured/poetry/" class="link-title">poetry</a></h1> 
+			<h1><a href="https://ericahiroko.ca/featured/poetry/" class="link-title">poetry</a></h1> 
             
-            <h1><a href="http://localhost:8888/erica/featured/non-fiction/" class="link-title">non-fiction</a></h1>
+            <h1><a href="https://ericahiroko.ca/featured/non-fiction/"" class="link-title">non-fiction</a></h1>
                    
 
 		</main><!-- #main -->

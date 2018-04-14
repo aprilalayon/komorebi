@@ -7,7 +7,7 @@
     body.blog,
     body.single,
     body.archive {
-        background-image: url(http://localhost:8888/erica/wp-content/uploads/2018/02/Scan_20160123-8.png);
+        background-image: url(https://ericahiroko.ca/wp-content/uploads/2018/02/Scan_20160123-8.png);
         background-size: cover;
         background-position: 4px 0%;
         background-repeat: no-repeat;
@@ -20,7 +20,6 @@
     .blog-site-content .content-area {
             background-color: rgba(0, 0, 0, 0.3);
             background-attachment: fixed;
-            width: 100%;
             height: auto;
             z-index: 0;
             padding-top: 20px;
