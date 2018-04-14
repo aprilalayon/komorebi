@@ -45,14 +45,12 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # Normalize
 --------------------------------------------------------------*/
 html {
-	font-family: sans-serif;
-	-webkit-text-size-adjust: 100%;
-	-ms-text-size-adjust: 100%;
-}
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
 
 body {
-	margin: 0;
-}
+  margin: 0; }
 
 article,
 aside,
@@ -66,194 +64,157 @@ menu,
 nav,
 section,
 summary {
-	display: block;
-}
+  display: block; }
 
 audio,
 canvas,
 progress,
 video {
-	display: inline-block;
-	vertical-align: baseline;
-}
+  display: inline-block;
+  vertical-align: baseline; }
 
 audio:not([controls]) {
-	display: none;
-	height: 0;
-}
+  display: none;
+  height: 0; }
 
 [hidden],
 template {
-	display: none;
-}
+  display: none; }
 
 a {
-	background-color: transparent;
-}
+  background-color: transparent; }
 
 a:active,
 a:hover {
-	outline: 0;
-}
+  outline: 0; }
 
 abbr[title] {
-	border-bottom: 1px dotted;
-}
+  border-bottom: 1px dotted; }
 
 b,
 strong {
-	font-weight: bold;
-}
+  font-weight: bold; }
 
 dfn {
-	font-style: italic;
-}
+  font-style: italic; }
 
 h1 {
-	font-size: 2em;
-	margin: 0.67em 0;
-}
+  font-size: 2em;
+  margin: 0.67em 0; }
 
 mark {
-	background: #ff0;
-	color: #000;
-}
+  background: #ff0;
+  color: #000; }
 
 small {
-	font-size: 80%;
-}
+  font-size: 80%; }
 
 sub,
 sup {
-	font-size: 75%;
-	line-height: 0;
-	position: relative;
-	vertical-align: baseline;
-}
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
 
 sup {
-	top: -0.5em;
-}
+  top: -0.5em; }
 
 sub {
-	bottom: -0.25em;
-}
+  bottom: -0.25em; }
 
 img {
-	border: 0;
-}
+  border: 0; }
 
 svg:not(:root) {
-	overflow: hidden;
-}
+  overflow: hidden; }
 
 figure {
-	margin: 1em 40px;
-}
+  margin: 1em 40px; }
 
 hr {
-	box-sizing: content-box;
-	height: 0;
-}
+  box-sizing: content-box;
+  height: 0; }
 
 pre {
-	overflow: auto;
-}
+  overflow: auto; }
 
 code,
 kbd,
 pre,
 samp {
-	font-family: monospace, monospace;
-	font-size: 1em;
-}
+  font-family: monospace, monospace;
+  font-size: 1em; }
 
 button,
 input,
 optgroup,
 select,
 textarea {
-	color: inherit;
-	font: inherit;
-	margin: 0;
-}
+  color: inherit;
+  font: inherit;
+  margin: 0; }
 
 button {
-	overflow: visible;
-}
+  overflow: visible; }
 
 button,
 select {
-	text-transform: none;
-}
+  text-transform: none; }
 
 button,
 html input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-	-webkit-appearance: button;
-	cursor: pointer;
-}
+  -webkit-appearance: button;
+  cursor: pointer; }
 
 button[disabled],
 html input[disabled] {
-	cursor: default;
-}
+  cursor: default; }
 
 button::-moz-focus-inner,
 input::-moz-focus-inner {
-	border: 0;
-	padding: 0;
-}
+  border: 0;
+  padding: 0; }
 
 input {
-	line-height: normal;
-}
+  line-height: normal; }
 
 input[type="checkbox"],
 input[type="radio"] {
-	box-sizing: border-box;
-	padding: 0;
-}
+  box-sizing: border-box;
+  padding: 0; }
 
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
-	height: auto;
-}
+  height: auto; }
 
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
-	-webkit-appearance: none;
-}
+  -webkit-appearance: none; }
 
 fieldset {
-	border: 1px solid #c0c0c0;
-	margin: 0 2px;
-	padding: 0.35em 0.625em 0.75em;
-}
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
 
 legend {
-	border: 0;
-	padding: 0;
-}
+  border: 0;
+  padding: 0; }
 
 textarea {
-	overflow: auto;
-}
+  overflow: auto; }
 
 optgroup {
-	font-weight: bold;
-}
+  font-weight: bold; }
 
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
+  border-collapse: collapse;
+  border-spacing: 0; }
 
 td,
 th {
-	padding: 0;
-}
+  padding: 0; }
 
 /*--------------------------------------------------------------
 # Typography
@@ -264,133 +225,109 @@ input,
 select,
 optgroup,
 textarea {
-	color: #404040;
-	font-family: sans-serif;
-	font-size: 16px;
-	font-size: 1rem;
-	line-height: 1.5;
-}
+  color: #404040;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5; }
 
 h1, h2, h3, h4, h5, h6 {
-	clear: both;
-}
+  clear: both; }
 
 p {
-	margin-bottom: 1.5em;
-}
+  margin-bottom: 1.5em; }
 
 dfn, cite, em, i {
-	font-style: italic;
-}
+  font-style: italic; }
 
 blockquote {
-	margin: 0 1.5em;
-}
+  margin: 0 1.5em; }
 
 address {
-	margin: 0 0 1.5em;
-}
+  margin: 0 0 1.5em; }
 
 pre {
-	background: #eee;
-	font-family: "Courier 10 Pitch", Courier, monospace;
-	font-size: 15px;
-	font-size: 0.9375rem;
-	line-height: 1.6;
-	margin-bottom: 1.6em;
-	max-width: 100%;
-	overflow: auto;
-	padding: 1.6em;
-}
+  background: #eee;
+  font-family: "Courier 10 Pitch", Courier, monospace;
+  font-size: 15px;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  margin-bottom: 1.6em;
+  max-width: 100%;
+  overflow: auto;
+  padding: 1.6em; }
 
 code, kbd, tt, var {
-	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
-	font-size: 15px;
-	font-size: 0.9375rem;
-}
+  font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+  font-size: 15px;
+  font-size: 0.9375rem; }
 
 abbr, acronym {
-	border-bottom: 1px dotted #666;
-	cursor: help;
-}
+  border-bottom: 1px dotted #666;
+  cursor: help; }
 
 mark, ins {
-	background: #fff9c0;
-	text-decoration: none;
-}
+  background: #fff9c0;
+  text-decoration: none; }
 
 big {
-	font-size: 125%;
-}
+  font-size: 125%; }
 
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
 html {
-	box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 *,
 *:before,
 *:after {
-	/* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
-	box-sizing: inherit;
-}
+  /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+  box-sizing: inherit; }
 
 body {
-	background: #fff;
-	/* Fallback for when there is no custom background color defined. */
-}
+  background: #fff;
+  /* Fallback for when there is no custom background color defined. */ }
 
 hr {
-	background-color: #ccc;
-	border: 0;
-	height: 1px;
-	margin-bottom: 1.5em;
-}
+  background-color: #ccc;
+  border: 0;
+  height: 1px;
+  margin-bottom: 1.5em; }
 
 ul, ol {
-	margin: 0 0 1.5em 3em;
-}
+  margin: 0 0 1.5em 3em; }
 
 ul {
-	list-style: disc;
-}
+  list-style: disc; }
 
 ol {
-	list-style: decimal;
-}
+  list-style: decimal; }
 
 li > ul,
 li > ol {
-	margin-bottom: 0;
-	margin-left: 1.5em;
-}
+  margin-bottom: 0;
+  margin-left: 1.5em; }
 
 dt {
-	font-weight: bold;
-}
+  font-weight: bold; }
 
 dd {
-	margin: 0 1.5em 1.5em;
-}
+  margin: 0 1.5em 1.5em; }
 
 img {
-	height: auto;
-	/* Make sure images are scaled correctly. */
-	max-width: 100%;
-	/* Adhere to container width. */
-}
+  height: auto;
+  /* Make sure images are scaled correctly. */
+  max-width: 100%;
+  /* Adhere to container width. */ }
 
 figure {
-	margin: 1em 0;
-	/* Extra wide images within figure tags don't overflow the content area. */
-}
+  margin: 1em 0;
+  /* Extra wide images within figure tags don't overflow the content area. */ }
 
 table {
-	margin: 0 0 1.5em;
-	width: 100%;
-}
+  margin: 0 0 1.5em;
+  width: 100%; }
 
 /*--------------------------------------------------------------
 # Forms
@@ -399,33 +336,28 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-	border: 1px solid;
-	border-color: #ccc #ccc #bbb;
-	border-radius: 3px;
-	background: #e6e6e6;
-	color: rgba(0, 0, 0, 0.8);
-	font-size: 12px;
-	font-size: 0.75rem;
-	line-height: 1;
-	padding: .6em 1em .4em;
-}
-
-button:hover,
-input[type="button"]:hover,
-input[type="reset"]:hover,
-input[type="submit"]:hover {
-	border-color: #ccc #bbb #aaa;
-}
-
-button:active, button:focus,
-input[type="button"]:active,
-input[type="button"]:focus,
-input[type="reset"]:active,
-input[type="reset"]:focus,
-input[type="submit"]:active,
-input[type="submit"]:focus {
-	border-color: #aaa #bbb #bbb;
-}
+  border: 1px solid;
+  border-color: #ccc #ccc #bbb;
+  border-radius: 3px;
+  background: #e6e6e6;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 12px;
+  font-size: 0.75rem;
+  line-height: 1;
+  padding: .6em 1em .4em; }
+  button:hover,
+  input[type="button"]:hover,
+  input[type="reset"]:hover,
+  input[type="submit"]:hover {
+    border-color: #ccc #bbb #aaa; }
+  button:active, button:focus,
+  input[type="button"]:active,
+  input[type="button"]:focus,
+  input[type="reset"]:active,
+  input[type="reset"]:focus,
+  input[type="submit"]:active,
+  input[type="submit"]:focus {
+    border-color: #aaa #bbb #bbb; }
 
 input[type="text"],
 input[type="email"],
@@ -443,38 +375,33 @@ input[type="datetime"],
 input[type="datetime-local"],
 input[type="color"],
 textarea {
-	color: #666;
-	border: 1px solid #ccc;
-	border-radius: 3px;
-	padding: 3px;
-}
-
-input[type="text"]:focus,
-input[type="email"]:focus,
-input[type="url"]:focus,
-input[type="password"]:focus,
-input[type="search"]:focus,
-input[type="number"]:focus,
-input[type="tel"]:focus,
-input[type="range"]:focus,
-input[type="date"]:focus,
-input[type="month"]:focus,
-input[type="week"]:focus,
-input[type="time"]:focus,
-input[type="datetime"]:focus,
-input[type="datetime-local"]:focus,
-input[type="color"]:focus,
-textarea:focus {
-	color: #111;
-}
+  color: #666;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 3px; }
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="url"]:focus,
+  input[type="password"]:focus,
+  input[type="search"]:focus,
+  input[type="number"]:focus,
+  input[type="tel"]:focus,
+  input[type="range"]:focus,
+  input[type="date"]:focus,
+  input[type="month"]:focus,
+  input[type="week"]:focus,
+  input[type="time"]:focus,
+  input[type="datetime"]:focus,
+  input[type="datetime-local"]:focus,
+  input[type="color"]:focus,
+  textarea:focus {
+    color: #111; }
 
 select {
-	border: 1px solid #ccc;
-}
+  border: 1px solid #ccc; }
 
 textarea {
-	width: 100%;
-}
+  width: 100%; }
 
 /*--------------------------------------------------------------
 # Navigation
@@ -483,474 +410,375 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-	color: royalblue;
-}
-
-a:visited {
-	color: purple;
-}
-
-a:hover, a:focus, a:active {
-	color: midnightblue;
-}
-
-a:focus {
-	outline: thin dotted;
-}
-
-a:hover, a:active {
-	outline: 0;
-}
+  color: royalblue; }
+  a:visited {
+    color: purple; }
+  a:hover, a:focus, a:active {
+    color: midnightblue; }
+  a:focus {
+    outline: thin dotted; }
+  a:hover, a:active {
+    outline: 0; }
 
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
 .main-navigation {
-	clear: both;
-	display: block;
-	float: left;
-	width: 100%;
-}
-
-.main-navigation ul {
-	display: none;
-	list-style: none;
-	margin: 0;
-	padding-left: 0;
-}
-
-.main-navigation ul ul {
-	position: static;
-	z-index: 1000;
-	float: none;
-	min-width: 10rem;
-	padding: 0 0;
-	margin: 0 0 0;
-	font-size: 1rem;
-	color: #292b2c;
-	list-style: none;
-	border: none;
-	border-radius: none;
-}
-
-.main-navigation ul ul ul {
-	left: -999em;
-	top: 0;
-}
-
-.main-navigation ul ul li:hover > ul,
-.main-navigation ul ul li.focus > ul {
-	left: 100%;
-}
-
-.main-navigation ul ul a {
-	text-align: right;
-}
-
-.main-navigation ul li:hover > ul,
-.main-navigation ul li.focus > ul {
-	left: auto;
-}
-
-.main-navigation li {
-	float: left;
-	position: relative;
-}
-
-.main-navigation a {
-	display: block;
-	text-decoration: none;
-}
+  clear: both;
+  display: block;
+  float: left;
+  width: 100%; }
+  .main-navigation ul {
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding-left: 0; }
+    .main-navigation ul ul {
+      position: static;
+      z-index: 1000;
+      float: none;
+      min-width: 10rem;
+      padding: 0 0;
+      margin: 0 0 0;
+      font-size: 1rem;
+      color: #292b2c;
+      list-style: none;
+      border: none;
+      border-radius: none; }
+      .main-navigation ul ul ul {
+        left: -999em;
+        top: 0; }
+      .main-navigation ul ul li:hover > ul, .main-navigation ul ul li.focus > ul {
+        left: 100%; }
+      .main-navigation ul ul a {
+        text-align: right; }
+    .main-navigation ul li:hover > ul,
+    .main-navigation ul li.focus > ul {
+      left: auto; }
+  .main-navigation li {
+    float: left;
+    position: relative; }
+  .main-navigation a {
+    display: block;
+    text-decoration: none; }
 
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
-	display: block;
-}
+  display: block; }
 
 @media screen and (min-width: 37.5em) {
-	.menu-toggle {
-		display: none;
-	}
-	.main-navigation ul {
-		display: block;
-	}
-}
+  .menu-toggle {
+    display: none; }
 
+  .main-navigation ul {
+    display: block; } }
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
 .post-navigation {
-	margin: 0 0 1.5em;
-	overflow: hidden;
-}
-
+  margin: 0 0 1.5em;
+  overflow: hidden; }
 .comment-navigation .nav-previous,
 .posts-navigation .nav-previous,
 .post-navigation .nav-previous {
-	float: left;
-	width: 50%;
-}
-
+  float: left;
+  width: 50%; }
 .comment-navigation .nav-next,
 .posts-navigation .nav-next,
 .post-navigation .nav-next {
-	float: right;
-	text-align: right;
-	width: 50%;
-}
+  float: right;
+  text-align: right;
+  width: 50%; }
 
 #masthead {
-	position: fixed;
-	width: 300px;
-}
+  position: fixed;
+  width: 300px; }
 
 .site-header {
-	padding-right: 3%;
-	padding-left: 3%;
-	background-color: white;
-	height: auto;
-	border-right: 1px solid grey;
-	top: 0;
-	left: 0;
-	z-index: 9999;
-}
+  padding-right: 3%;
+  padding-left: 3%;
+  background-color: white;
+  height: auto;
+  border-right: 1px solid grey;
+  top: 0;
+  left: 0;
+  z-index: 9999; }
 
 .logo {
-	margin-top: 20%;
-}
+  margin-top: 20%; }
 
 .main-navigation {
-	margin-top: 50px;
-}
-
-.main-navigation a {
-	font-family: "Signika", sans-serif;
-	font-weight: 400;
-	font-size: 2em;
-	line-height: 1.3;
-	color: #D6B181;
-}
-
-.main-navigation a:hover {
-	color: #B8D6D1;
-}
+  margin-top: 50px; }
+  .main-navigation a {
+    font-family: "Signika", sans-serif;
+    font-weight: 400;
+    font-size: 2em;
+    line-height: 1.3;
+    color: #D6B181; }
+  .main-navigation a:hover {
+    color: #B8D6D1; }
 
 .menu-social-menu-container {
-	border-top: 1px solid #E2E2E2;
-}
-
-.menu-social-menu-container ul {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	    -ms-flex-direction: row;
-	        flex-direction: row;
-	-webkit-box-pack: space-evenly;
-	    -ms-flex-pack: space-evenly;
-	        justify-content: space-evenly;
-	margin-left: 0;
-	padding-left: 0;
-}
-
-.menu-social-menu-container ul li {
-	list-style-type: none;
-}
-
-.menu-social-menu-container ul li a {
-	color: #E2E2E2;
-	font-size: 2em;
-}
-
-.menu-social-menu-container ul li a:hover {
-	color: #B8D6D1;
-}
+  border-top: 1px solid #E2E2E2; }
+  .menu-social-menu-container ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-left: 0;
+    padding-left: 0; }
+    .menu-social-menu-container ul li {
+      list-style-type: none; }
+      .menu-social-menu-container ul li a {
+        color: #E2E2E2;
+        font-size: 2em; }
+      .menu-social-menu-container ul li a:hover {
+        color: #B8D6D1; }
 
 .nav-mobile ul {
-	margin: 0;
-	padding: 0;
-}
-
-.nav-mobile ul li {
-	list-style-type: none;
-}
-
-.nav-mobile ul li a {
-	font-family: "Signika", sans-serif;
-	font-weight: 400;
-	font-size: 1.5em;
-	line-height: 1.3;
-	color: #D6B181;
-}
-
-.nav-mobile ul li a:hover {
-	color: #B8D6D1;
-	text-decoration: none;
-}
+  margin: 0;
+  padding: 0; }
+  .nav-mobile ul li {
+    list-style-type: none; }
+    .nav-mobile ul li a {
+      font-family: "Signika", sans-serif;
+      font-weight: 400;
+      font-size: 1.5em;
+      line-height: 1.3;
+      color: #D6B181; }
+    .nav-mobile ul li a:hover {
+      color: #B8D6D1;
+      text-decoration: none; }
 
 .dropdown-menu a:first-child,
 .dropdown-menu a:last-child {
-	font-family: "Signika", sans-serif;
-	font-weight: 300;
-	color: #B8D6D1;
-}
+  font-family: "Signika", sans-serif;
+  font-weight: 300;
+  color: #B8D6D1; }
 
 @media only screen and (min-width: 320px) {
-	/*skip to content for accessibility*/
-	.screen-reader-text {
-		clip: rect(1px, 1px, 1px, 1px);
-		position: absolute !important;
-		height: 1px;
-		width: 1px;
-		overflow: hidden;
-	}
-	.screen-reader-text:hover,
-	.screen-reader-text:active,
-	.screen-reader-text:focus {
-		background-color: #f1f1f1;
-		border-radius: 3px;
-		box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
-		clip: auto !important;
-		color: #21759b;
-		display: block;
-		font-size: 14px;
-		font-weight: bold;
-		height: auto;
-		left: 5px;
-		line-height: normal;
-		padding: 15px 23px 14px;
-		text-decoration: none;
-		top: 5px;
-		width: auto;
-		z-index: 100000;
-		/* Above WP toolbar */
-	}
-	.main-navigation,
-	.menu-social-menu-container,
-	.nav-mobile {
-		display: none;
-	}
-	.site-header {
-		min-width: 100%;
-		height: auto;
-		border: none;
-		position: relative;
-		padding-bottom: 2em;
-		border-bottom: 1px solid #E2E2E2;
-	}
-	.site-header .site-branding {
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-		-webkit-box-pack: center;
-		    -ms-flex-pack: center;
-		        justify-content: center;
-	}
-	.site-header .site-branding a {
-		width: 300px;
-	}
-	.site-header .site-branding .logo {
-		margin: 1.8em auto;
-		max-width: 100%;
-	}
-	button {
-		background: none;
-	}
-	.menu-toggle {
-		text-transform: capitalize;
-		font-family: "Signika", sans-serif;
-		font-size: 1.3em;
-		margin: 10px auto;
-		padding: 0;
-		cursor: pointer;
-		display: block;
-		width: 49px;
-		height: 35px;
-		border: none;
-		background-color: none;
-		white-space: nowrap;
-	}
-	.dropdown-menu {
-		position: static;
-		z-index: 1000;
-		float: none;
-		min-width: 10rem;
-		padding: .5rem 0;
-		margin: .125rem 0 0;
-		font-size: 1rem;
-		color: #292b2c;
-		text-align: center;
-		list-style: none;
-		background-color: #fff;
-		background-clip: padding-box;
-		border: none;
-		border-radius: none;
-	}
-	.dropdown-menu.toggle-on:after {
-		color: #D6B181;
-	}
-	.dropdown-menu > li {
-		display: none;
-	}
-	.menu-item-1821 {
-		position: relative;
-	}
-	.menu-item-1821.toggle-on:after {
-		content: "\f0d8";
-		font-family: FontAwesome;
-		color: #D6B181;
-	}
-	.menu-item-1821::after {
-		content: "\f0d7";
-		font-family: FontAwesome;
-		font-style: normal;
-		font-weight: normal;
-		text-decoration: inherit;
-		position: absolute;
-		top: 2px;
-		margin-left: 48px;
-		color: #D6B181;
-	}
-	.expand,
-	.visible {
-		display: block;
-	}
-	.nav-mobile {
-		height: auto;
-		z-index: 10000;
-	}
-}
+  /*skip to content for accessibility*/
+  .screen-reader-text {
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden; }
 
+  .screen-reader-text:hover,
+  .screen-reader-text:active,
+  .screen-reader-text:focus {
+    background-color: #f1f1f1;
+    border-radius: 3px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+    clip: auto !important;
+    color: #21759b;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    height: auto;
+    left: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000;
+    /* Above WP toolbar */ }
+
+  .main-navigation,
+  .menu-social-menu-container,
+  .nav-mobile {
+    display: none; }
+
+  .site-header {
+    min-width: 100%;
+    height: auto;
+    border: none;
+    position: relative;
+    padding-bottom: 2em;
+    border-bottom: 1px solid #E2E2E2; }
+    .site-header .site-branding {
+      display: flex;
+      justify-content: center; }
+      .site-header .site-branding a {
+        width: 300px; }
+      .site-header .site-branding .logo {
+        margin: 1.8em auto;
+        max-width: 100%; }
+
+  button {
+    background: none; }
+
+  .menu-toggle {
+    text-transform: capitalize;
+    font-family: "Signika", sans-serif;
+    font-size: 1.3em;
+    margin: 10px auto;
+    padding: 0;
+    cursor: pointer;
+    display: block;
+    width: 49px;
+    height: 35px;
+    border: none;
+    background-color: none;
+    white-space: nowrap; }
+
+  .dropdown-menu {
+    position: static;
+    z-index: 1000;
+    float: none;
+    min-width: 10rem;
+    padding: .5rem 0;
+    margin: .125rem 0 0;
+    font-size: 1rem;
+    color: #292b2c;
+    text-align: center;
+    list-style: none;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: none;
+    border-radius: none; }
+
+  .dropdown-menu.toggle-on:after {
+    color: #D6B181; }
+
+  .dropdown-menu > li {
+    display: none; }
+
+  .menu-item-1821 {
+    position: relative; }
+
+  .menu-item-1821.toggle-on:after {
+    content: "\f0d8";
+    font-family: FontAwesome;
+    color: #D6B181; }
+
+  .menu-item-1821::after {
+    content: "\f0d7";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    position: absolute;
+    top: 2px;
+    margin-left: 48px;
+    color: #D6B181; }
+
+  .expand,
+  .visible {
+    display: block; }
+
+  .nav-mobile {
+    height: auto;
+    z-index: 10000; } }
 @media only screen and (min-width: 1000px) and (min-height: 649px) {
-	.site-header {
-		z-index: 1000;
-		border-bottom: none;
-		min-width: 300px;
-	}
-	.nav-mobile,
-	.menu-toggle {
-		display: none;
-	}
-	.main-navigation,
-	.menu-social-menu-container {
-		display: block;
-	}
-	.main-navigation {
-		margin-bottom: 80px;
-	}
-	.menu-item-1821::after {
-		margin-left: 10px;
-	}
-	.mid-header {
-		min-height: calc(100vh - 59px);
-	}
-	.sticky-social {
-		height: 50px;
-		margin-bottom: 10px;
-	}
-	.main-navigation a,
-	.menu-social-menu-container ul li a {
-		font-size: 1.8em;
-	}
-	.menu-item-1821::after {
-		top: 5px;
-		margin-left: 5px;
-	}
-	.menu-social-menu-container ul {
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-		-webkit-box-orient: horizontal;
-		-webkit-box-direction: normal;
-		    -ms-flex-direction: row;
-		        flex-direction: row;
-		-webkit-box-pack: space-evenly;
-		    -ms-flex-pack: space-evenly;
-		        justify-content: space-evenly;
-		margin-left: 0;
-		padding-left: 0;
-	}
-}
+  .site-header {
+    z-index: 1000;
+    border-bottom: none;
+    min-width: 300px; }
 
+  .nav-mobile,
+  .menu-toggle {
+    display: none; }
+
+  .main-navigation,
+  .menu-social-menu-container {
+    display: block; }
+
+  .main-navigation {
+    margin-bottom: 80px; }
+
+  .menu-item-1821::after {
+    margin-left: 10px; }
+
+  .mid-header {
+    min-height: calc(100vh - 59px); }
+
+  .sticky-social {
+    height: 50px;
+    margin-bottom: 10px; }
+
+  .main-navigation a,
+  .menu-social-menu-container ul li a {
+    font-size: 1.8em; }
+
+  .menu-item-1821::after {
+    top: 5px;
+    margin-left: 5px; }
+
+  .menu-social-menu-container ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-left: 0;
+    padding-left: 0; } }
 @media only screen and (min-width: 1300px) {
-	.main-navigation a,
-	.menu-social-menu-container ul li a {
-		font-size: 2.1em;
-	}
-	.menu-item-1821::after {
-		top: 5px;
-	}
-}
+  .main-navigation a,
+  .menu-social-menu-container ul li a {
+    font-size: 2.1em; }
 
+  .menu-item-1821::after {
+    top: 5px; } }
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
 /* Text meant only for screen readers. */
 .screen-reader-text {
-	border: 0;
-	clip: rect(1px, 1px, 1px, 1px);
-	-webkit-clip-path: inset(50%);
-	        clip-path: inset(50%);
-	height: 1px;
-	margin: -1px;
-	overflow: hidden;
-	padding: 0;
-	position: absolute !important;
-	width: 1px;
-	word-wrap: normal !important;
-	/* Many screen reader and browser combinations announce broken words as they would appear visually. */
-}
-
-.screen-reader-text:focus {
-	background-color: #f1f1f1;
-	border-radius: 3px;
-	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
-	clip: auto !important;
-	-webkit-clip-path: none;
-	        clip-path: none;
-	color: #21759b;
-	display: block;
-	font-size: 14px;
-	font-size: 0.875rem;
-	font-weight: bold;
-	height: auto;
-	left: 5px;
-	line-height: normal;
-	padding: 15px 23px 14px;
-	text-decoration: none;
-	top: 5px;
-	width: auto;
-	z-index: 100000;
-	/* Above WP toolbar. */
-}
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  width: 1px;
+  word-wrap: normal !important;
+  /* Many screen reader and browser combinations announce broken words as they would appear visually. */ }
+  .screen-reader-text:focus {
+    background-color: #f1f1f1;
+    border-radius: 3px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+    clip: auto !important;
+    clip-path: none;
+    color: #21759b;
+    display: block;
+    font-size: 14px;
+    font-size: 0.875rem;
+    font-weight: bold;
+    height: auto;
+    left: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000;
+    /* Above WP toolbar. */ }
 
 /* Do not show the outline on the skip link target. */
 #content[tabindex="-1"]:focus {
-	outline: 0;
-}
+  outline: 0; }
 
 /*--------------------------------------------------------------
 # Alignments
 --------------------------------------------------------------*/
 .alignleft {
-	display: inline;
-	float: left;
-	margin-right: 1.5em;
-}
+  display: inline;
+  float: left;
+  margin-right: 1.5em; }
 
 .alignright {
-	display: inline;
-	float: right;
-	margin-left: 1.5em;
-}
+  display: inline;
+  float: right;
+  margin-left: 1.5em; }
 
 .aligncenter {
-	clear: both;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-}
+  clear: both;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
 
 /*--------------------------------------------------------------
 # Clearings
@@ -967,10 +795,9 @@ a:hover, a:active {
 .site-content:after,
 .site-footer:before,
 .site-footer:after {
-	content: "";
-	display: table;
-	table-layout: fixed;
-}
+  content: "";
+  display: table;
+  table-layout: fixed; }
 
 .clear:after,
 .entry-content:after,
@@ -978,20 +805,16 @@ a:hover, a:active {
 .site-header:after,
 .site-content:after,
 .site-footer:after {
-	clear: both;
-}
+  clear: both; }
 
 /*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
 .widget {
-	margin: 0 0 1.5em;
-	/* Make sure select elements fit in widgets. */
-}
-
-.widget select {
-	max-width: 100%;
-}
+  margin: 0 0 1.5em;
+  /* Make sure select elements fit in widgets. */ }
+  .widget select {
+    max-width: 100%; }
 
 /*--------------------------------------------------------------
 # Content
@@ -1000,929 +823,662 @@ a:hover, a:active {
 ## Posts and pages
 --------------------------------------------------------------*/
 .sticky {
-	display: block;
-}
+  display: block; }
 
 .hentry {
-	margin: 0 0 1.5em;
-}
+  margin: 0 0 1.5em; }
 
 .updated:not(.published) {
-	display: none;
-}
+  display: none; }
 
 .page-content,
 .entry-content,
 .entry-summary {
-	margin: 1.5em 0 0;
-}
+  margin: 1.5em 0 0; }
 
 .page-links {
-	clear: both;
-	margin: 0 0 1.5em;
-}
+  clear: both;
+  margin: 0 0 1.5em; }
 
 /*--------------------------------------------------------------
 ## Comments
 --------------------------------------------------------------*/
 .comment-content a {
-	word-wrap: break-word;
-}
+  word-wrap: break-word; }
 
 .bypostauthor {
-	display: block;
-}
+  display: block; }
 
 /*--------------------------------------------------------------
 # Pages
 --------------------------------------------------------------*/
 @media only screen and (min-width: 320px) {
-	.column-container {
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-		-webkit-box-orient: vertical;
-		-webkit-box-direction: normal;
-		    -ms-flex-direction: column;
-		        flex-direction: column;
-		margin-top: 195px;
-	}
-	.about-col-1 {
-		-webkit-box-ordinal-group: 3;
-		    -ms-flex-order: 2;
-		        order: 2;
-		padding: 0 30px;
-		color: #292325;
-	}
-	.about-col-2 {
-		-webkit-box-ordinal-group: 2;
-		    -ms-flex-order: 1;
-		        order: 1;
-		text-align: center;
-		-o-object-fit: contain;
-		   object-fit: contain;
-		display: block;
-		margin: 0;
-	}
-}
+  .column-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 195px; }
 
+  .about-col-1 {
+    order: 2;
+    padding: 0 30px;
+    color: #292325; }
+
+  .about-col-2 {
+    order: 1;
+    text-align: center;
+    object-fit: contain;
+    display: block;
+    margin: 0; } }
 @media only screen and (min-width: 1000px) {
-	.site-flex {
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-		-webkit-box-orient: horizontal;
-		-webkit-box-direction: normal;
-		    -ms-flex-direction: row;
-		        flex-direction: row;
-	}
-	.column-container {
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-		-webkit-box-orient: horizontal;
-		-webkit-box-direction: normal;
-		    -ms-flex-direction: row;
-		        flex-direction: row;
-		width: 100%;
-		margin-top: 0;
-		padding-left: 300px;
-	}
-	.about-col-1 {
-		background-color: #B8D6D1;
-		width: 40%;
-		-webkit-box-ordinal-group: 2;
-		    -ms-flex-order: 1;
-		        order: 1;
-	}
-	.about-col-1 p {
-		margin: 150px 30px 30px 30px;
-		font-family: "Source Sans Pro", sans-serif;
-		font-size: 1.3em;
-		line-height: 1.5em;
-	}
-	.about-col-1 p a {
-		text-decoration: none;
-		color: white;
-	}
-	.about-col-2 {
-		width: 60%;
-		margin: 0;
-		-webkit-box-ordinal-group: 3;
-		    -ms-flex-order: 2;
-		        order: 2;
-	}
-	.about-col-2 img {
-		display: block;
-		-o-object-fit: cover;
-		   object-fit: cover;
-		height: 100%;
-		width: 100%;
-	}
-}
+  .site-flex {
+    display: flex;
+    flex-direction: row; }
 
+  .column-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 0;
+    padding-left: 300px; }
+
+  .about-col-1 {
+    background-color: #B8D6D1;
+    width: 40%;
+    order: 1; }
+    .about-col-1 p {
+      margin: 150px 30px 30px 30px;
+      font-family: "Source Sans Pro", sans-serif;
+      font-size: 1.3em;
+      line-height: 1.5em; }
+      .about-col-1 p a {
+        text-decoration: none;
+        color: white; }
+
+  .about-col-2 {
+    width: 60%;
+    margin: 0;
+    order: 2; }
+    .about-col-2 img {
+      display: block;
+      object-fit: cover;
+      height: 100%;
+      width: 100%; } }
 @media only screen and (min-width: 320px) {
-	.art-main {
-		margin-top: 205px;
-	}
-	.gallery-grid {
-		margin: 20px auto;
-	}
-	.gallery-grid .grid-sizer {
-		margin: 0 auto;
-		text-align: center;
-	}
-	.gallery-grid .item {
-		margin: 0 1% 1% 0;
-		display: inline-block;
-	}
-	.gallery-grid .item--width2 {
-		width: 40%;
-	}
-}
+  .art-main {
+    margin-top: 205px; }
 
+  .gallery-grid {
+    margin: 20px auto; }
+    .gallery-grid .grid-sizer {
+      margin: 0 auto;
+      text-align: center; }
+    .gallery-grid .item {
+      margin: 0 1% 1% 0;
+      display: inline-block; }
+    .gallery-grid .item--width2 {
+      width: 40%; } }
 @media only screen and (min-width: 1000px) {
-	.art-main {
-		margin-top: 0;
-		margin-left: 300px;
-	}
-	.gallery-grid .grid-sizer {
-		text-align: left;
-	}
-	.item {
-		margin: 0 0 1% 1%;
-	}
-}
+  .art-main {
+    margin-top: 0;
+    margin-left: 300px; }
 
+  .gallery-grid .grid-sizer {
+    text-align: left; }
+
+  .item {
+    margin: 0 0 1% 1%; } }
 @media only screen and (min-width: 320px) {
-	body.post-type-archive-community {
-		background-image: url(https://ericahiroko.ca/wp-content/uploads/2018/02/Scan_20160123-4.png);
-		background-size: cover;
-		background-position: -100px 0%;
-		background-repeat: no-repeat;
-		z-index: 0;
-	}
-	body.post-type-archive-community .community-content-area {
-		background-color: rgba(0, 0, 0, 0.3);
-		padding-top: 200px;
-		padding-right: 40px;
-	}
-	body.post-type-archive-community h1 {
-		margin: 30px 50px;
-		color: white;
-		font-family: "Signika", sans-serif;
-		font-size: 3em;
-		text-align: center;
-	}
-	body.post-type-archive-community .community-main {
-		padding-top: 200px;
-	}
-	body.post-type-archive-community .community-body {
-		margin: 10px 30px;
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-		-webkit-box-orient: vertical;
-		-webkit-box-direction: normal;
-		    -ms-flex-direction: column;
-		        flex-direction: column;
-	}
-	body.post-type-archive-community .community-body h2 {
-		font-family: "Signika", sans-serif;
-		color: white;
-		margin-bottom: 5px;
-	}
-	body.post-type-archive-community .community-body .event-role {
-		font-family: "Signika", sans-serif;
-		font-weight: 100;
-		font-size: 1.5em;
-		margin-top: 5px;
-		margin-bottom: 5px;
-	}
-	body.post-type-archive-community .community-body .event-summary {
-		margin-bottom: 30px;
-	}
-	body.post-type-archive-community .community-body hr {
-		margin-top: 15px;
-		margin-bottom: 15px;
-	}
-	body.post-type-archive-community .community-body p {
-		color: white;
-	}
-	body.post-type-archive-community .community-body a {
-		background-color: white;
-		padding: 10px 30px;
-		font-family: "Signika", sans-serif;
-		text-transform: uppercase;
-	}
-	body.post-type-archive-community .community-body a:visited,
-	body.post-type-archive-community .community-body a:hover {
-		color: #292325;
-		text-decoration: none;
-		background-color: #88BEB1;
-	}
-	body.post-type-archive-community .community-body .community-post {
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-		-webkit-box-orient: vertical;
-		-webkit-box-direction: normal;
-		    -ms-flex-direction: column;
-		        flex-direction: column;
-	}
-	body.post-type-archive-community .community-body .community-post section {
-		-webkit-box-ordinal-group: 3;
-		    -ms-flex-order: 2;
-		        order: 2;
-		margin-bottom: 100px;
-	}
-	body.post-type-archive-community .community-body .community-post figure {
-		-webkit-box-ordinal-group: 2;
-		    -ms-flex-order: 1;
-		        order: 1;
-		text-align: center;
-	}
-}
-
+  body.post-type-archive-community {
+    background-image: url(https://ericahiroko.ca/wp-content/uploads/2018/02/Scan_20160123-4.png);
+    background-size: cover;
+    background-position: -100px 0%;
+    background-repeat: no-repeat;
+    z-index: 0; }
+    body.post-type-archive-community .community-content-area {
+      background-color: rgba(0, 0, 0, 0.3);
+      padding-top: 200px;
+      padding-right: 40px; }
+    body.post-type-archive-community h1 {
+      margin: 30px 50px;
+      color: white;
+      font-family: "Signika", sans-serif;
+      font-size: 3em;
+      text-align: center; }
+    body.post-type-archive-community .community-main {
+      padding-top: 200px; }
+    body.post-type-archive-community .community-body {
+      margin: 10px 30px;
+      display: flex;
+      flex-direction: column; }
+      body.post-type-archive-community .community-body h2 {
+        font-family: "Signika", sans-serif;
+        color: white;
+        margin-bottom: 5px; }
+      body.post-type-archive-community .community-body .event-role {
+        font-family: "Signika", sans-serif;
+        font-weight: 100;
+        font-size: 1.5em;
+        margin-top: 5px;
+        margin-bottom: 5px; }
+      body.post-type-archive-community .community-body .event-summary {
+        margin-bottom: 30px; }
+      body.post-type-archive-community .community-body hr {
+        margin-top: 15px;
+        margin-bottom: 15px; }
+      body.post-type-archive-community .community-body p {
+        color: white; }
+      body.post-type-archive-community .community-body a {
+        background-color: white;
+        padding: 10px 30px;
+        font-family: "Signika", sans-serif;
+        text-transform: uppercase; }
+      body.post-type-archive-community .community-body a:visited,
+      body.post-type-archive-community .community-body a:hover {
+        color: #292325;
+        text-decoration: none;
+        background-color: #88BEB1; }
+      body.post-type-archive-community .community-body .community-post {
+        display: flex;
+        flex-direction: column; }
+        body.post-type-archive-community .community-body .community-post section {
+          order: 2;
+          margin-bottom: 100px; }
+        body.post-type-archive-community .community-body .community-post figure {
+          order: 1;
+          text-align: center; } }
 @media only screen and (min-width: 900px) {
-	body.post-type-archive-community .community-content-area {
-		padding-top: 220px;
-	}
-	.community-body .community-post {
-		margin-bottom: 80px;
-	}
-	.community-body .odd {
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-		-webkit-box-orient: horizontal !important;
-		-webkit-box-direction: normal !important;
-		    -ms-flex-direction: row !important;
-		        flex-direction: row !important;
-	}
-	.community-body .odd section {
-		max-width: 400px;
-	}
-	.community-body .odd figure {
-		max-width: 400px;
-		margin-top: 0;
-		margin-right: 50px;
-	}
-	.community-body .even {
-		-webkit-box-orient: horizontal !important;
-		-webkit-box-direction: reverse !important;
-		    -ms-flex-direction: row-reverse !important;
-		        flex-direction: row-reverse !important;
-	}
-	.community-body .even section {
-		max-width: 400px;
-		margin-right: 50px;
-	}
-	.community-body .even figure {
-		margin-top: 0;
-		max-width: 400px;
-	}
-}
+  body.post-type-archive-community .community-content-area {
+    padding-top: 220px; }
 
+  .community-body .community-post {
+    margin-bottom: 80px; }
+  .community-body .odd {
+    display: flex;
+    flex-direction: row !important; }
+    .community-body .odd section {
+      max-width: 400px; }
+    .community-body .odd figure {
+      max-width: 400px;
+      margin-top: 0;
+      margin-right: 50px; }
+  .community-body .even {
+    flex-direction: row-reverse !important; }
+    .community-body .even section {
+      max-width: 400px;
+      margin-right: 50px; }
+    .community-body .even figure {
+      margin-top: 0;
+      max-width: 400px; } }
 @media only screen and (min-width: 930px) {
-	.community-content-area {
-		padding-top: 20px;
-	}
-	.community-body .odd section {
-		max-width: 600px;
-	}
-	.community-body .even section {
-		max-width: 600px;
-	}
-}
+  .community-content-area {
+    padding-top: 20px; }
 
+  .community-body .odd section {
+    max-width: 600px; }
+  .community-body .even section {
+    max-width: 600px; } }
 @media only screen and (min-width: 931px) and (max-width: 999px) {
-	.community-content-area {
-		padding-top: 0;
-	}
-}
-
+  .community-content-area {
+    padding-top: 0; } }
 @media only screen and (min-width: 1000px) {
-	body.post-type-archive-community .community-main {
-		padding: 0;
-	}
-	body.post-type-archive-community .community-content-area {
-		padding-top: 0;
-		padding-left: 310px;
-	}
-	body.post-type-archive-community h1 {
-		text-align: center;
-	}
-}
+  body.post-type-archive-community .community-main {
+    padding: 0; }
 
+  body.post-type-archive-community .community-content-area {
+    padding-top: 0;
+    padding-left: 310px; }
+
+  body.post-type-archive-community h1 {
+    text-align: center; } }
 @media only screen and (min-width: 320px) {
-	body.page-id-1772 {
-		background-image: url(https://ericahiroko.ca/wp-content/uploads/2018/02/Scan_20160415-16.png);
-		background-size: cover;
-		background-position: 0 0;
-		background-repeat: no-repeat;
-		z-index: 0;
-	}
-	body.page-id-1772 .site-content {
-		width: 100%;
-	}
-	body.page-id-1772 .content-area {
-		background-color: rgba(0, 0, 0, 0.3);
-		height: 100%;
-		margin-top: 200px;
-	}
-	.post-1772 {
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-		-webkit-box-orient: vertical;
-		-webkit-box-direction: normal;
-		    -ms-flex-direction: column;
-		        flex-direction: column;
-		-webkit-box-pack: center;
-		    -ms-flex-pack: center;
-		        justify-content: center;
-	}
-	.post-1772 .entry-header {
-		text-align: center;
-	}
-	.post-1772 .entry-header h1 {
-		font-family: "Signika", sans-serif;
-		font-size: 2.3em;
-		background-color: #B8D6D1;
-		display: inline-block;
-		padding: 10px 20px;
-		color: white;
-		border-radius: 5px;
-		margin-top: 50px;
-	}
-	.post-1772 .wpcf7-form {
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-		-webkit-box-orient: vertical;
-		-webkit-box-direction: normal;
-		    -ms-flex-direction: column;
-		        flex-direction: column;
-		-webkit-box-align: center;
-		    -ms-flex-align: center;
-		        align-items: center;
-		font-family: "Source Sans Pro", sans-serif;
-		color: white;
-	}
-	.post-1772 .wpcf7-form label {
-		display: inline-block;
-	}
-	.post-1772 .wpcf7-form .wpcf7-submit {
-		background-color: white;
-		font-family: "Signika", sans-serif;
-		font-size: 1em;
-		border: none;
-		width: 100%;
-		padding: 10px 30px;
-		width: 344px;
-		display: inherit;
-	}
-	.post-1772 .wpcf7-form p {
-		margin-bottom: 0.5em;
-	}
-}
+  body.page-id-1772 {
+    background-image: url(https://ericahiroko.ca/wp-content/uploads/2018/02/Scan_20160415-16.png);
+    background-size: cover;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    z-index: 0; }
+    body.page-id-1772 .site-content {
+      width: 100%; }
+    body.page-id-1772 .content-area {
+      background-color: rgba(0, 0, 0, 0.3);
+      height: 100%;
+      margin-top: 200px; }
 
+  .post-1772 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .post-1772 .entry-header {
+      text-align: center; }
+      .post-1772 .entry-header h1 {
+        font-family: "Signika", sans-serif;
+        font-size: 2.3em;
+        background-color: #B8D6D1;
+        display: inline-block;
+        padding: 10px 20px;
+        color: white;
+        border-radius: 5px;
+        margin-top: 50px; }
+    .post-1772 .wpcf7-form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-family: "Source Sans Pro", sans-serif;
+      color: white; }
+      .post-1772 .wpcf7-form label {
+        display: inline-block; }
+      .post-1772 .wpcf7-form .wpcf7-submit {
+        background-color: white;
+        font-family: "Signika", sans-serif;
+        font-size: 1em;
+        border: none;
+        width: 100%;
+        padding: 10px 30px;
+        width: 344px;
+        display: inherit; }
+      .post-1772 .wpcf7-form p {
+        margin-bottom: 0.5em; } }
 @media only screen and (min-width: 700px) {
-	body.page-id-1772 .content-area {
-		padding-top: 20px;
-	}
-}
-
+  body.page-id-1772 .content-area {
+    padding-top: 20px; } }
 @media only screen and (min-width: 1000px) {
-	body.page-id-1772 .content-area {
-		margin-top: 0px;
-		margin-left: 300px;
-	}
-	.entry-header h1 {
-		width: 500px;
-	}
-	input[type="text"],
-	input[type="email"] {
-		width: 500px;
-		height: 50px;
-	}
-	textarea {
-		width: 500px;
-		height: 200px;
-	}
-	input {
-		font-size: 2rem;
-	}
-	.post-1772 .wpcf7-form .wpcf7-submit {
-		width: 500px;
-		height: 50px;
-		text-align: center;
-		display: inherit;
-	}
-}
+  body.page-id-1772 .content-area {
+    margin-top: 0px;
+    margin-left: 300px; }
 
+  .entry-header h1 {
+    width: 500px; }
+
+  input[type="text"],
+  input[type="email"] {
+    width: 500px;
+    height: 50px; }
+
+  textarea {
+    width: 500px;
+    height: 200px; }
+
+  input {
+    font-size: 2rem; }
+
+  .post-1772 .wpcf7-form .wpcf7-submit {
+    width: 500px;
+    height: 50px;
+    text-align: center;
+    display: inherit; } }
 .home {
-	margin: 0px;
-	padding: 0px;
-	width: 100%;
-	height: 100%;
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-}
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
 
 @media only screen and (min-width: 320px) {
-	body.page-id-1755 {
-		margin: 0px;
-		padding: 0px;
-		width: 100%;
-		height: 100%;
-		background-image: url(https://ericahiroko.ca/wp-content/uploads/2017/12/Scan_20160123-2.png);
-		background-size: cover;
-		background-position: 0% 200px;
-		background-repeat: no-repeat;
-	}
-}
-
+  body.page-id-1755 {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://ericahiroko.ca/wp-content/uploads/2017/12/Scan_20160123-2.png);
+    background-size: cover;
+    background-position: 0% 200px;
+    background-repeat: no-repeat; } }
 @media only screen and (min-width: 1000px) and (min-height: 649px) {
-	.site-header {
-		width: 23%;
-		height: auto;
-	}
-	body.page-id-1755 {
-		background-position: 0 0;
-	}
-}
+  .site-header {
+    width: 23%;
+    height: auto; }
 
+  body.page-id-1755 {
+    background-position: 0 0; } }
 @media only screen and (min-width: 320px) {
-	.blog-site-content #primary {
-		margin-left: 0;
-	}
-	body.blog,
-	body.single,
-	body.archive {
-		background-image: url(https://ericahiroko.ca/wp-content/uploads/2018/02/Scan_20160123-8.png);
-		background-size: cover;
-		background-position: 4px 0%;
-		background-repeat: no-repeat;
-		background-attachment: fixed;
-		background-position: center;
-		z-index: 0;
-	}
-	.blog-site-content .content-area {
-		background-color: rgba(0, 0, 0, 0.3);
-		background-attachment: fixed;
-		height: auto;
-		z-index: 0;
-		padding-top: 20px;
-		padding-bottom: 300px;
-	}
-	.post {
-		text-align: left-aligned;
-		margin: 250px 50px 0 50px;
-	}
-	.post .blog-title {
-		font-family: "Signika", sans-serif;
-		color: white;
-		font-size: 3em;
-		margin-bottom: 10px;
-	}
-	.post .entry-header .category-container {
-		margin: 0;
-	}
-	.post .entry-header .post-categories {
-		margin: 0;
-		padding: 0;
-	}
-	.post .entry-header .post-categories li {
-		list-style-type: none;
-		margin: 0 0 20px 0;
-	}
-	.post .entry-header .post-categories a {
-		list-style-type: none;
-		color: white;
-		background-color: #D6B181;
-		padding: 10px 25px;
-		text-transform: uppercase;
-		letter-spacing: .10em;
-		font-size: 10px;
-		margin-right: 5%;
-		border-radius: 5px;
-	}
-	.post .entry-meta {
-		color: #E2E2E2;
-		font-family: "Source Sans Pro", sans-serif;
-		margin-bottom: 20px;
-	}
-	.post img {
-		margin-bottom: 20px;
-		margin-right: 2%;
-	}
-	.post p {
-		color: white;
-	}
-}
+  .blog-site-content #primary {
+    margin-left: 0; }
 
+  body.blog,
+  body.single,
+  body.archive {
+    background-image: url(https://ericahiroko.ca/wp-content/uploads/2018/02/Scan_20160123-8.png);
+    background-size: cover;
+    background-position: 4px 0%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    z-index: 0; }
+
+  .blog-site-content .content-area {
+    background-color: rgba(0, 0, 0, 0.3);
+    background-attachment: fixed;
+    height: auto;
+    z-index: 0;
+    padding-top: 20px;
+    padding-bottom: 300px; }
+
+  .post {
+    text-align: left-aligned;
+    margin: 250px 50px 0 50px; }
+    .post .blog-title {
+      font-family: "Signika", sans-serif;
+      color: white;
+      font-size: 3em;
+      margin-bottom: 10px; }
+    .post .entry-header .category-container {
+      margin: 0; }
+    .post .entry-header .post-categories {
+      margin: 0;
+      padding: 0; }
+      .post .entry-header .post-categories li {
+        list-style-type: none;
+        margin: 0 0 20px 0; }
+      .post .entry-header .post-categories a {
+        list-style-type: none;
+        color: white;
+        background-color: #D6B181;
+        padding: 10px 25px;
+        text-transform: uppercase;
+        letter-spacing: .10em;
+        font-size: 10px;
+        margin-right: 5%;
+        border-radius: 5px; }
+    .post .entry-meta {
+      color: #E2E2E2;
+      font-family: "Source Sans Pro", sans-serif;
+      margin-bottom: 20px; }
+    .post img {
+      margin-bottom: 20px;
+      margin-right: 2%; }
+    .post p {
+      color: white; } }
 @media only screen and (min-width: 780px) {
-	.post .post-categories {
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-	}
-	.post .post-categories li {
-		margin: 0 20px 0 0;
-	}
-	.post .entry-header h1.blog-title {
-		margin-top: 0;
-	}
-	.post .category-container {
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-		-webkit-box-orient: horizontal;
-		-webkit-box-direction: normal;
-		    -ms-flex-direction: row;
-		        flex-direction: row;
-		-webkit-box-align: center;
-		    -ms-flex-align: center;
-		        align-items: center;
-	}
-	.post .entry-content {
-		margin-top: 0;
-	}
-	.post .entry-content .news-image-containter {
-		margin-top: 0;
-	}
-	.post .entry-content .entry-meta {
-		margin-bottom: 0;
-	}
-}
-
+  .post .post-categories {
+    display: flex; }
+    .post .post-categories li {
+      margin: 0 20px 0 0; }
+  .post .entry-header h1.blog-title {
+    margin-top: 0; }
+  .post .category-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+  .post .entry-content {
+    margin-top: 0; }
+    .post .entry-content .news-image-containter {
+      margin-top: 0; }
+    .post .entry-content .entry-meta {
+      margin-bottom: 0; } }
 @media only screen and (min-width: 1000px) {
-	.blog-site-content #primary {
-		margin-left: 300px;
-	}
-	.post {
-		margin-top: 50px;
-	}
-}
+  .blog-site-content #primary {
+    margin-left: 300px; }
 
+  .post {
+    margin-top: 50px; } }
 @media only screen and (min-width: 1250px) {
-	.blog-site-content {
-		margin-right: 300px;
-	}
-	.blog-site-content aside {
-		height: 100%;
-		position: fixed;
-		top: 0;
-		right: 0;
-		width: 300px;
-	}
-}
+  .blog-site-content {
+    margin-right: 300px; }
 
+  .blog-site-content aside {
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px; } }
 @media only screen and (min-width: 320px) {
-	.page-title {
-		padding: 10px 20px;
-		color: #292325;
-		background-color: #B8D6D1;
-		font-family: "Signika", sans-serif;
-		display: inline-block;
-		border-radius: 5px;
-		margin: 50px 0 0 50px;
-	}
-	.archive-main article {
-		margin-top: 25px;
-	}
-	.archive-main .page-header {
-		margin-top: 180px;
-	}
-}
+  .page-title {
+    padding: 10px 20px;
+    color: #292325;
+    background-color: #B8D6D1;
+    font-family: "Signika", sans-serif;
+    display: inline-block;
+    border-radius: 5px;
+    margin: 50px 0 0 50px; }
 
+  .archive-main article {
+    margin-top: 25px; }
+
+  .archive-main .page-header {
+    margin-top: 180px; } }
 @media only screen and (min-width: 1000px) {
-	.archive-main article {
-		margin-top: 20px;
-	}
-	.archive-main .page-header {
-		margin-top: 0;
-	}
-}
+  .archive-main article {
+    margin-top: 20px; }
 
+  .archive-main .page-header {
+    margin-top: 0; } }
 @media only screen and (min-width: 320px) {
-	body.term-201 {
-		background-image: url(https://ericahiroko.ca/wp-content/uploads/2017/12/Scan_20160123-3.png);
-		background-size: cover;
-		background-position: 0% 200px;
-		background-repeat: repeat;
-		background-attachment: fixed;
-		background-position: center;
-		z-index: 0;
-	}
-	.poetry-main {
-		position: absolute;
-		padding: 5%;
-		margin-top: 200px;
-		background-color: rgba(0, 0, 0, 0.3);
-		width: 100%;
-		height: 100vh;
-	}
-	.poetry-main h1 {
-		font-family: "Signika", sans-serif;
-		font-size: 1.8em;
-		text-align: left;
-		padding: 20px 40px;
-		text-transform: uppercase;
-		background-color: #B8D6D1;
-		color: white;
-		border-radius: 5px;
-		display: inline-block;
-	}
-	.poetry-main h1 a {
-		color: white;
-		text-decoration: none;
-	}
-	.poetry-main h1 a a:hover,
-	.poetry-main h1 a a:focus,
-	.poetry-main h1 a a:active {
-		text-decoration: none;
-	}
-	.poetry-main p {
-		background-color: #B8D6D1;
-		color: #39443C;
-		text-align: left;
-		padding: 10px 40px;
-		border-radius: 5px;
-		display: inline-block;
-	}
-	.poetry-main p a {
-		color: white;
-	}
-	.poetry-main p a:hover,
-	.poetry-main p a:focus,
-	.poetry-main p a:active {
-		text-decoration: none;
-		color: lightcoral;
-	}
-}
+  body.term-201 {
+    background-image: url(https://ericahiroko.ca/wp-content/uploads/2017/12/Scan_20160123-3.png);
+    background-size: cover;
+    background-position: 0% 200px;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-position: center;
+    z-index: 0; }
 
+  .poetry-main {
+    position: absolute;
+    padding: 5%;
+    margin-top: 200px;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100vh; }
+    .poetry-main h1 {
+      font-family: "Signika", sans-serif;
+      font-size: 1.8em;
+      text-align: left;
+      padding: 20px 40px;
+      text-transform: uppercase;
+      background-color: #B8D6D1;
+      color: white;
+      border-radius: 5px;
+      display: inline-block; }
+      .poetry-main h1 a {
+        color: white;
+        text-decoration: none; }
+        .poetry-main h1 a a:hover,
+        .poetry-main h1 a a:focus,
+        .poetry-main h1 a a:active {
+          text-decoration: none; }
+    .poetry-main p {
+      background-color: #B8D6D1;
+      color: #39443C;
+      text-align: left;
+      padding: 10px 40px;
+      border-radius: 5px;
+      display: inline-block; }
+      .poetry-main p a {
+        color: white; }
+      .poetry-main p a:hover,
+      .poetry-main p a:focus,
+      .poetry-main p a:active {
+        text-decoration: none;
+        color: lightcoral; } }
 @media only screen and (min-width: 1000px) and (min-height: 649px) {
-	.poetry-main {
-		margin-left: 300px;
-		margin-top: 0;
-		position: absolute;
-		top: 0;
-		left: 0;
-		overflow: auto;
-	}
-	.poetry-main h1 {
-		font-size: 3em;
-	}
-}
-
+  .poetry-main {
+    margin-left: 300px;
+    margin-top: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: auto; }
+    .poetry-main h1 {
+      font-size: 3em; } }
 @media only screen and (min-width: 320px) {
-	body.term-202 {
-		background-image: url(https://ericahiroko.ca/wp-content/uploads/2017/12/Scan_20160123-3.png);
-		background-size: cover;
-		background-position: 0% 200px;
-		background-repeat: repeat;
-		background-attachment: fixed;
-		background-position: center;
-		z-index: 0;
-	}
-	.non-fiction-main {
-		position: absolute;
-		padding: 5%;
-		margin-top: 200px;
-		background-color: rgba(0, 0, 0, 0.3);
-	}
-	.non-fiction-main h1 {
-		font-family: "Signika", sans-serif;
-		font-size: 1.8em;
-		text-align: left;
-		padding: 20px 40px;
-		text-transform: uppercase;
-		background-color: #B8D6D1;
-		color: white;
-		border-radius: 5px;
-		display: inline-block;
-	}
-	.non-fiction-main h1 a {
-		color: white;
-		text-decoration: none;
-	}
-	.non-fiction-main h1 a a:hover,
-	.non-fiction-main h1 a a:focus,
-	.non-fiction-main h1 a a:active {
-		text-decoration: none;
-	}
-	.non-fiction-main p {
-		background-color: #B8D6D1;
-		color: #39443C;
-		text-align: left;
-		padding: 10px 40px;
-		border-radius: 5px;
-		display: inline-block;
-	}
-	.non-fiction-main p a {
-		color: white;
-	}
-	.non-fiction-main p a:hover,
-	.non-fiction-main p a:focus,
-	.non-fiction-main p a:active {
-		text-decoration: none;
-		color: lightcoral;
-	}
-}
+  body.term-202 {
+    background-image: url(https://ericahiroko.ca/wp-content/uploads/2017/12/Scan_20160123-3.png);
+    background-size: cover;
+    background-position: 0% 200px;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-position: center;
+    z-index: 0; }
 
+  .non-fiction-main {
+    position: absolute;
+    padding: 5%;
+    margin-top: 200px;
+    background-color: rgba(0, 0, 0, 0.3); }
+    .non-fiction-main h1 {
+      font-family: "Signika", sans-serif;
+      font-size: 1.8em;
+      text-align: left;
+      padding: 20px 40px;
+      text-transform: uppercase;
+      background-color: #B8D6D1;
+      color: white;
+      border-radius: 5px;
+      display: inline-block; }
+      .non-fiction-main h1 a {
+        color: white;
+        text-decoration: none; }
+        .non-fiction-main h1 a a:hover,
+        .non-fiction-main h1 a a:focus,
+        .non-fiction-main h1 a a:active {
+          text-decoration: none; }
+    .non-fiction-main p {
+      background-color: #B8D6D1;
+      color: #39443C;
+      text-align: left;
+      padding: 10px 40px;
+      border-radius: 5px;
+      display: inline-block; }
+      .non-fiction-main p a {
+        color: white; }
+      .non-fiction-main p a:hover,
+      .non-fiction-main p a:focus,
+      .non-fiction-main p a:active {
+        text-decoration: none;
+        color: lightcoral; } }
 @media only screen and (min-width: 1000px) and (min-height: 649px) {
-	.non-fiction-main {
-		margin-left: 300px;
-		margin-top: 0;
-		padding-bottom: 200px;
-		position: absolute;
-		top: 0;
-		left: 0;
-		overflow: auto;
-	}
-	.non-fiction-main h1 {
-		font-size: 3em;
-	}
-}
-
+  .non-fiction-main {
+    margin-left: 300px;
+    margin-top: 0;
+    padding-bottom: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: auto; }
+    .non-fiction-main h1 {
+      font-size: 3em; } }
 @media only screen and (min-width: 320px) {
-	body.post-type-archive-work {
-		margin: 0px;
-		padding: 0px;
-		width: 100%;
-		height: 100%;
-		background-image: url(https://ericahiroko.ca/wp-content/uploads/2017/12/Scan_20160123-3.png);
-		background-size: cover;
-		background-position: 0% 200px;
-		background-repeat: no-repeat;
-		z-index: 0;
-	}
-	body.post-type-archive-work .work-content-area {
-		background-color: rgba(0, 0, 0, 0.3);
-		background-attachment: fixed;
-		width: 100vw;
-		height: 100vh;
-		top: 0px;
-		left: 0px;
-		z-index: 0;
-		margin-top: 200px;
-	}
-	.work-main {
-		z-index: 1000;
-		background-color: transparent;
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		-webkit-transform: translate(-50%, -18%);
-		        transform: translate(-50%, -18%);
-	}
-	.work-main h1 {
-		font-family: "Signika", sans-serif;
-		font-size: 1.5em;
-		text-align: center;
-		padding: 20px 40px;
-		text-transform: uppercase;
-		border-radius: 5px;
-		width: 300px;
-	}
-	.work-main h1 a {
-		color: white;
-		text-decoration: none;
-	}
-	.work-main h1 a:hover,
-	.work-main h1 a:focus,
-	.work-main h1 a:active {
-		text-decoration: none;
-	}
-	.work-main h1:first-child {
-		background-color: #B8D6D1;
-	}
-	.work-main h1:last-child {
-		background-color: #B8D6D1;
-	}
-	.work-main h1:hover {
-		background-color: #39443C;
-		color: white;
-	}
-}
+  body.post-type-archive-work {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://ericahiroko.ca/wp-content/uploads/2017/12/Scan_20160123-3.png);
+    background-size: cover;
+    background-position: 0% 200px;
+    background-repeat: no-repeat;
+    z-index: 0; }
+    body.post-type-archive-work .work-content-area {
+      background-color: rgba(0, 0, 0, 0.3);
+      background-attachment: fixed;
+      width: 100vw;
+      height: 100vh;
+      top: 0px;
+      left: 0px;
+      z-index: 0;
+      margin-top: 200px; }
 
+  .work-main {
+    z-index: 1000;
+    background-color: transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -18%); }
+    .work-main h1 {
+      font-family: "Signika", sans-serif;
+      font-size: 1.5em;
+      text-align: center;
+      padding: 20px 40px;
+      text-transform: uppercase;
+      border-radius: 5px;
+      width: 300px; }
+      .work-main h1 a {
+        color: white;
+        text-decoration: none; }
+      .work-main h1 a:hover,
+      .work-main h1 a:focus,
+      .work-main h1 a:active {
+        text-decoration: none; }
+    .work-main h1:first-child {
+      background-color: #B8D6D1; }
+    .work-main h1:last-child {
+      background-color: #B8D6D1; }
+    .work-main h1:hover {
+      background-color: #39443C;
+      color: white; } }
 @media only screen and (min-width: 600px) {
-	.work-main h1 {
-		font-size: 2.7em;
-		width: 500px;
-	}
-}
-
+  .work-main h1 {
+    font-size: 2.7em;
+    width: 500px; } }
 @media only screen and (min-width: 1000px) and (min-height: 649px) {
-	body.post-type-archive-work,
-	body.term-201,
-	body.term-202 {
-		background-position: 0px 0px;
-	}
-	body.post-type-archive-work .work-content-area,
-	body.term-201 .work-content-area,
-	body.term-202 .work-content-area {
-		margin-top: 0;
-	}
-	.work-main {
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-		-webkit-box-orient: vertical;
-		-webkit-box-direction: normal;
-		    -ms-flex-direction: column;
-		        flex-direction: column;
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		-webkit-transform: translate(-26%, -57%);
-		        transform: translate(-26%, -57%);
-	}
-	.work-main h1 {
-		font-size: 3.5em;
-		width: 600px;
-	}
-	.work-main h1:first-child {
-		margin-right: 20%;
-	}
-}
+  body.post-type-archive-work,
+  body.term-201,
+  body.term-202 {
+    background-position: 0px 0px; }
+    body.post-type-archive-work .work-content-area,
+    body.term-201 .work-content-area,
+    body.term-202 .work-content-area {
+      margin-top: 0; }
 
+  .work-main {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-26%, -57%); }
+    .work-main h1 {
+      font-size: 3.5em;
+      width: 600px; }
+    .work-main h1:first-child {
+      margin-right: 20%; } }
 /*--------------------------------------------------------------
 # Sidebar
 --------------------------------------------------------------*/
 @media only screen and (min-width: 320px) {
-	.news-sidebar {
-		background-color: #E2E2E2;
-		padding: 50px 0;
-		color: #292325;
-	}
-	.news-sidebar ul {
-		margin: 15px 0 50px 50px;
-	}
-	.news-sidebar li {
-		list-style-type: none;
-	}
-	.news-sidebar a {
-		color: #292325;
-	}
-	.news-sidebar .news-sidebar-title {
-		font-family: "Signika", sans-serif;
-		margin: 0 50px 0 50px;
-	}
-}
-
+  .news-sidebar {
+    background-color: #E2E2E2;
+    padding: 50px 0;
+    color: #292325; }
+    .news-sidebar ul {
+      margin: 15px 0 50px 50px; }
+    .news-sidebar li {
+      list-style-type: none; }
+    .news-sidebar a {
+      color: #292325; }
+    .news-sidebar .news-sidebar-title {
+      font-family: "Signika", sans-serif;
+      margin: 0 50px 0 50px; } }
 @media only screen and (min-width: 900px) {
-	.news-sidebar {
-		margin-left: 300px;
-	}
-}
-
+  .news-sidebar {
+    margin-left: 300px; } }
 @media only screen and (min-width: 1300px) {
-	.blog-site-content {
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-		-webkit-box-orient: horizontal;
-		-webkit-box-direction: normal;
-		    -ms-flex-direction: row;
-		        flex-direction: row;
-	}
-	.blog-site-content .content-area {
-		-webkit-box-flex: 3;
-		    -ms-flex: 3;
-		        flex: 3;
-	}
-	.blog-site-content aside {
-		-webkit-box-flex: 1;
-		    -ms-flex: 1;
-		        flex: 1;
-	}
-	.blog-site-content aside ul {
-		margin-left: 0;
-	}
-	.blog-site-content aside h2.news-sidebar-title {
-		margin-left: 30px;
-	}
-}
-
+  .blog-site-content {
+    display: flex;
+    flex-direction: row; }
+    .blog-site-content .content-area {
+      flex: 3; }
+    .blog-site-content aside {
+      flex: 1; }
+      .blog-site-content aside ul {
+        margin-left: 0; }
+      .blog-site-content aside h2.news-sidebar-title {
+        margin-left: 30px; } }
 /*--------------------------------------------------------------
 # Infinite scroll
 --------------------------------------------------------------*/
 /* Globally hidden elements when Infinite Scroll is supported and in use. */
 .infinite-scroll .posts-navigation,
 .infinite-scroll.neverending .site-footer {
-	/* Theme Footer (when set to scrolling) */
-	display: none;
-}
+  /* Theme Footer (when set to scrolling) */
+  display: none; }
 
 /* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before. */
 .infinity-end.neverending .site-footer {
-	display: block;
-}
+  display: block; }
 
 /*--------------------------------------------------------------
 # Media
@@ -1930,98 +1486,70 @@ a:hover, a:active {
 .page-content .wp-smiley,
 .entry-content .wp-smiley,
 .comment-content .wp-smiley {
-	border: none;
-	margin-bottom: 0;
-	margin-top: 0;
-	padding: 0;
-}
+  border: none;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 0; }
 
 /* Make sure embeds and iframes fit their containers. */
 embed,
 iframe,
 object {
-	max-width: 100%;
-}
+  max-width: 100%; }
 
 /* Make sure logo link wraps around logo image. */
 .custom-logo-link {
-	display: inline-block;
-}
+  display: inline-block; }
 
 /*--------------------------------------------------------------
 ## Captions
 --------------------------------------------------------------*/
 .wp-caption {
-	margin-bottom: 1.5em;
-	max-width: 100%;
-}
-
-.wp-caption img[class*="wp-image-"] {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.wp-caption .wp-caption-text {
-	margin: 0.8075em 0;
-}
+  margin-bottom: 1.5em;
+  max-width: 100%; }
+  .wp-caption img[class*="wp-image-"] {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
+  .wp-caption .wp-caption-text {
+    margin: 0.8075em 0; }
 
 .wp-caption-text {
-	text-align: center;
-}
+  text-align: center; }
 
 /*--------------------------------------------------------------
 ## Galleries
 --------------------------------------------------------------*/
 .gallery {
-	margin-bottom: 1.5em;
-}
+  margin-bottom: 1.5em; }
 
 .gallery-item {
-	display: inline-block;
-	text-align: center;
-	vertical-align: top;
-	width: 100%;
-}
-
-.gallery-columns-2 .gallery-item {
-	max-width: 50%;
-}
-
-.gallery-columns-3 .gallery-item {
-	max-width: 33.33%;
-}
-
-.gallery-columns-4 .gallery-item {
-	max-width: 25%;
-}
-
-.gallery-columns-5 .gallery-item {
-	max-width: 20%;
-}
-
-.gallery-columns-6 .gallery-item {
-	max-width: 16.66%;
-}
-
-.gallery-columns-7 .gallery-item {
-	max-width: 14.28%;
-}
-
-.gallery-columns-8 .gallery-item {
-	max-width: 12.5%;
-}
-
-.gallery-columns-9 .gallery-item {
-	max-width: 11.11%;
-}
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  width: 100%; }
+  .gallery-columns-2 .gallery-item {
+    max-width: 50%; }
+  .gallery-columns-3 .gallery-item {
+    max-width: 33.33%; }
+  .gallery-columns-4 .gallery-item {
+    max-width: 25%; }
+  .gallery-columns-5 .gallery-item {
+    max-width: 20%; }
+  .gallery-columns-6 .gallery-item {
+    max-width: 16.66%; }
+  .gallery-columns-7 .gallery-item {
+    max-width: 14.28%; }
+  .gallery-columns-8 .gallery-item {
+    max-width: 12.5%; }
+  .gallery-columns-9 .gallery-item {
+    max-width: 11.11%; }
 
 .gallery-caption {
-	display: block;
-}
+  display: block; }
 
 /*--------------------------------------------------------------
 # Media Queries
 --------------------------------------------------------------*/
 
-/*# sourceMappingURL=../komorebi/sass/maps/style.css.map */
+/*# sourceMappingURL=style.css.map */
