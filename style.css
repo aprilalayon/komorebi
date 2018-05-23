@@ -1523,6 +1523,13 @@ a:hover, a:active {
 	.post p {
 		color: white;
 	}
+	.post .entry-content a {
+		text-decoration: none;
+		color: lightcoral;
+	}
+	.post .entry-content a:hover {
+		color: #B8D6D1;
+	}
 }
 
 @media only screen and (min-width: 780px) {
