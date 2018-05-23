@@ -52,14 +52,15 @@
             display: inline-block;
 
             a {
-                color: lightcoral;
+                color: $dark-green;
+                text-decoration: underline;
             }
 
             a:hover,
             a:focus,
             a:active {
                 text-decoration: none;
-                color:white;
+                color:lightcoral;
             }
         }
 

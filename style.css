@@ -1374,7 +1374,7 @@ a:hover, a:active {
 		display: inline-block;
 	}
 	.post-1772 .wpcf7-form .wpcf7-submit {
-		background-color: white;
+		background-color: #B8D6D1;
 		font-family: "Signika", sans-serif;
 		font-size: 1em;
 		border: none;
@@ -1624,7 +1624,7 @@ a:hover, a:active {
 		padding: 5%;
 		margin-top: 200px;
 		background-color: rgba(0, 0, 0, 0.3);
-		width: 80%;
+		width: 90%;
 		height: 100vh;
 	}
 	.poetry-main h1 {
@@ -1656,13 +1656,14 @@ a:hover, a:active {
 		display: inline-block;
 	}
 	.poetry-main p a {
-		color: lightcoral;
+		color: #39443C;
+		text-decoration: underline;
 	}
 	.poetry-main p a:hover,
 	.poetry-main p a:focus,
 	.poetry-main p a:active {
 		text-decoration: none;
-		color: white;
+		color: lightcoral;
 	}
 }
 
@@ -1725,13 +1726,14 @@ a:hover, a:active {
 		display: inline-block;
 	}
 	.non-fiction-main p a {
-		color: lightcoral;
+		color: #39443C;
+		text-decoration: underline;
 	}
 	.non-fiction-main p a:hover,
 	.non-fiction-main p a:focus,
 	.non-fiction-main p a:active {
 		text-decoration: none;
-		color: white;
+		color: lightcoral;
 	}
 }
 
@@ -1806,7 +1808,7 @@ a:hover, a:active {
 		background-color: #B8D6D1;
 	}
 	.work-main h1:hover {
-		background-color: #39443C;
+		background-color: lightcoral;
 		color: white;
 	}
 }
